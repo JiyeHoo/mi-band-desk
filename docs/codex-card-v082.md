@@ -20,9 +20,9 @@ v17 把英文拆为定宽单字符 PNG；本版改为整行预排版，保留自
 
 ## 套餐与图标依据
 
-用户在本任务中明确确认「已确认，显示 Business 5×」。本版为当前 `self_serve_business_prolite` 显示 `Business 5×`；倍率是用户确认的信息，不是从剩余百分比或一个不存在的倍率字段推算。其他 planType 映射为正常大小写短名称；未知显示 ChatGPT。
+本版为 `self_serve_business_prolite` 显示 `Business 5×`；该映射沿用此前确认的显示规则，不从剩余百分比或不存在的倍率字段推算。其他 planType 映射为正常大小写短名称；未知显示 ChatGPT。
 
-[OpenAI 官方定价](https://learn.chatgpt.com/docs/pricing) 说明 Business ($100) 使用 Pro 5x 额度估算，但该说明本身不证明某个账号已购买此档位。保留用户确认作为本账户显示依据。
+[OpenAI 官方定价](https://learn.chatgpt.com/docs/pricing) 提供套餐信息；具体账户的套餐由其自身接口结果决定。
 
 Blossom 使用已安装官方 ChatGPT App 的公开 SVG 素材，白色等比栅格化为 36×36；源文件保留在 `scripts/vendor/openai/chatgpt-blossom.svg`，包内有 `common/licenses/OpenAI-NOTICE.txt`。仅用于标识额度来源，应用仍为独立的「机器人桌搭」，参见 [官方图标规范](https://openai.com/brand/)。
 
@@ -33,4 +33,4 @@ Blossom 使用已安装官方 ChatGPT App 的公开 SVG 素材，白色等比栅
 - 专用 PRE 的有数据 UI 使用明确标记的模拟器探针；探针不落缓存、不发 ACK。移除探针后重新构建正式 RPK，设备只安装正式包。
 - 设备版本、插件恢复、原生测试与用户真机验收分别记录在 [validation.md](validation.md) 和 [handoff.md](handoff.md)。不能再以浏览器截图替代用户真机反馈。
 
-2026-09-23：0.9.2 沿用本页的视觉布局，新增 Pro 20×／Pro 5× 的准确名称。当前账号已切换为 Pro 20×；[字段证据与修复](subscription-tiers.md)。
+2026-09-23：0.9.2 沿用本页的视觉布局，新增 Pro 20×／Pro 5× 的准确名称。[字段证据与修复](subscription-tiers.md)。

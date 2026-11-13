@@ -64,7 +64,7 @@
 - 新版本弧形边适配、整体较大字体和按钮的真机可读性/可操作性。
 
 - 目标由用户提供：小米手环 9 NFC，OS 3.1.32，绑定另一台 Android 手机。
-- AstroBox v2.1.0 ARM 应用已复制到 `/Applications/AstroBox.app`。
+- AstroBox v2.1.0 ARM 应用已安装。
   官方下载包标注 unsigned，初次系统校验未通过；用户后来已完成打开和连接，代理未执行绕过命令。
 - 0.1.2 按钮、返回手势和翻转已通过用户复测；弧边按最新反馈待确认。仍需计时确认常亮 30 分钟及 2 小时、前后台恢复、到期与退出后的自动息屏。
 - 用户已确认充电动画结束后应用可继续显示；持续底座展示、重插底座和长时常亮组合仍需专项观察。
@@ -380,7 +380,7 @@ AstroBox 安装前核对唯一连接目标“小米手环9 NFC版”、型号 M2
 
 - 用户已覆盖导入并授权 0.7.3。AstroBox 日志依次出现 interval 注册、UI render、snapshot ready、connected device count 1、`device`／`register_interconnect_recv`／`interconnect` 权限通过和 `sync finished: sent`。因此 Mac 回环 HTTP、设备发现、授权和单次 Interconnect 发送均已真实走通；这仍不能证明手环 ACK 已返回。
 - `sent` 后 guest 在 `wit-bindgen 0.57.1` 的 async waitable 收尾处触发 `assertion failed: !task.is_null()`；随后 Wasmtime 38 重复触发 `state.guest_task.is_none()`，每个 15 秒定时事件都报 `Plugin thread dropped the response`。这是 API level 3 `FutureWriter::drop` 在同步导出中尝试创建 waitable 的运行时问题，不是 Mac 桥、权限、设备发现或发送前链路故障。
-- 检查当前 `/Applications/AstroBox.app` 2.1.0 的实际 arm64 二进制：只含 Wasmtime 38、API level 2/3 分支和 `precompiled-index.json`／`.cwasm` 路径，没有官方新源码中的 API v4、Wasmtime 48、`.cwasm4` 或 v4 WIT 符号。因此没有交付会被当前客户端拒绝的 v4 manifest。
+- 检查 AstroBox 2.1.0 的实际 arm64 二进制：只含 Wasmtime 38、API level 2/3 分支和 `precompiled-index.json`／`.cwasm` 路径，没有官方新源码中的 API v4、Wasmtime 48、`.cwasm4` 或 v4 WIT 符号。因此没有交付会被当前客户端拒绝的 v4 manifest。
 - 0.7.4 保留 WASI 2 / API level 3。业务同步仍由 `block_on` 在当前回调中完成，但回调响应不再创建、写入或丢弃 guest `FutureWriter`：字符串响应直接透传 `os::version()` 的宿主 Future，unit 响应透传 `timer::clear_timer(u64::MAX)` 的宿主 Future；定时器 ID 从 1 开始，该哨兵清理无实际副作用。业务状态、权限范围和协议正文均未扩张。
 - `cargo fmt --check`、`cargo check --target wasm32-wasip2`、release clippy（warnings as errors）、`python3 scripts/build.py` 和 ZIP 完整性检查通过。WASM 279640 bytes，SHA-256 `666a38fa4eca04ea2170530a94be0cb4eeb4e0febd6df5a570204e119829ecc1`；ABP 104426 bytes，连续两次 SHA-256 均为 `4fc35657908a75e8151850da9b8bcee0513d3caea3e48c894e355c4841436d38`。
 - **当前边界：0.7.4 尚未覆盖导入；宿主 Future 是否能在当前 AstroBox 中完成回调返回、功能页渲染、至少一个 15 秒周期的持续发送、Mac 状态更新和手环 ACK 仍待真实验证。手环 RPK 无需重复安装。**
@@ -488,7 +488,7 @@ AstroBox 安装前核对唯一连接目标“小米手环9 NFC版”、型号 M2
 ### 设计与数据证据
 
 - 按 490×192 逻辑横屏重构为 OLED 深黑胶囊：左侧 20 段环形仪表和精确百分比，右侧 `CODEX`、套餐徽章、重置倒计时、额度轨道、更新时间和双击提示。继续使用构建期预旋转 PNG，不使用父层 transform 或持续动画。
-- 本机 Codex App Server 生成的实验协议 schema 明确包含 `RateLimitSnapshot.planType`；真实 `account/rateLimits/read` 同时在单桶和映射桶回读 `self_serve_business_prolite`。Mac 0.8.0 将其作为 schema v1 的可选 `payload.planType` 转发，手环映射为 `BIZ PRO LITE`。
+- Codex App Server 生成的实验协议 schema 包含 `RateLimitSnapshot.planType`；已核对 `account/rateLimits/read` 的单桶和映射桶响应。Mac 0.8.0 将其作为 schema v1 的可选 `payload.planType` 转发，手环按映射显示。
 - 当前额度响应没有倍率字段；用户举例的 `20×` 没有被写死或从套餐名推断。未知／旧快照降级为 `CODEX`。
 
 ### 自动、构建与视觉验证
@@ -502,7 +502,7 @@ AstroBox 安装前核对唯一连接目标“小米手环9 NFC版”、型号 M2
 ### Mac 与交付边界
 
 - AppKit 0.8.0 通过 Clang 语法检查、打包、ad-hoc 签名严格校验并重启；ZIP 39787 bytes，SHA-256 `f073eee99c3c501dd9f891e55cdbc85f44aaf71a565f3846d9508ca982c06679`。
-- 重启后 `GET /v1/snapshot` 真实回读 schema v1、`payload.planType=self_serve_business_prolite` 和当前 Codex 窗口；Mac UI 同步显示 `BIZ PRO LITE`。应用仍从 `.artifacts` 运行，未复制到 `/Applications`。
+- 重启后 `GET /v1/snapshot` 回读 schema v1 和 Codex 窗口，Mac UI 同步显示对应套餐；账户具体套餐不在公开记录中保留。
 - AstroBox 插件 0.7.5 不解析快照正文，可透明转发新增可选字段，因此本轮没有重建或覆盖插件。构建阶段 AstroBox 正在运行，健康接口回读 `lastRelayStatus=sent`；当时设备上的 v15 会忽略它不认识的可选字段。当前安装和插件恢复状态见下一节。
 - **构建完成时状态：已修改、已测试、已构建；Mac 0.8.0 已运行；手环当时仍为 v15，v16 尚未提交安装。** 后续安装证据见下一节；本条保留构建阶段边界，不能单独当作当前状态。
 
@@ -546,13 +546,13 @@ AstroBox 安装前核对唯一连接目标“小米手环9 NFC版”、型号 M2
 
 ## 2026-09-22 / 用户否定 v17 真机 UI，重新设计 v18
 
-用户真机反馈：字体大小、颜色不对，文字未对齐且错乱；隐藏「双击刷新」，CODEX 改 ChatGPT logo，可搭配小图标，套餐应简洁显示 Business 5× 这类文字，「本周剩余」加入环形额度进度。随后用户明确确认当前套餐为 **Business 5×**。
+用户真机反馈：字体大小、颜色不对，文字未对齐且错乱；隐藏「双击刷新」，CODEX 改 ChatGPT logo，可搭配小图标，套餐应简洁显示，「本周剩余」加入环形额度进度。
 
 该反馈覆盖 v17 的「待验收」状态：**v17 视觉验收失败**，不能以之前浏览器或 PRE 截图作为真机通过证据。v18 重新采用纯黑底、白色字、单一绿色环形进度，文字改整行预排版资源，使用独立版本文件名；无装饰背景、描边卡片或刷新提示。
 
 ## 2026-09-22 / v18 第一次安装未完成与无损压缩
 
-- 用户已确认当前套餐显示 Business 5×；新 UI 的环、Logo、统一文字基线已完成。
+- 新 UI 的环、Logo、统一文字基线已完成，并保留套餐显示映射。
 - 首个正式包：0.8.2 / code 18，4,987,869 bytes，SHA-256 `d3b8e2393024c96be4a09f24dc92a5cb96105a4d01c62e52a0de20c3de083628`。47 项测试、正式 RPK 校验与 PRE 冷启动／无数据 Codex 页通过；模拟器探针已移除。
 - 安装前确认唯一 Band 9 NFC、M2346B1、OS 3.1.32、v17，队列为空，插件可逆隔离。单次提交后 CLI 在 0% 超时，后台推进至 99.67213%；随后 AstroBox 报告设备连接中断。重连并进入快应用列表仍为 v17，因此本次安装未完成，不能把空队列当成功。
 - 保持插件隔离，进一步对颜色数不超过 256 的图片做精确索引色编码，逐像素确认 RGBA 完全一致。不是量化或降低分辨率，不改变布局、颜色、字形；重新构建后再提交。首次失败的根因尚未证实，不能仅凭包大小推断固件限制。
@@ -621,7 +621,7 @@ v19 第一次提交在 98.73418% 后连接中断；队列清空，重连后现�
 
 ### 原因与修改
 
-- Mac 原额度 `NSBox` 使用固定深灰色，文字却随系统外观变化，造成浅色模式对比不正确；原生截图还发现标题越出背景。改用 `BDQuotaView` 按系统 `controlBackgroundColor` 绘制，外观变化时重绘，所有内容约束直接落在同一背景内。套餐同步为用户确认的 Business 5×。
+- Mac 原额度 `NSBox` 使用固定深灰色，文字却随系统外观变化，造成浅色模式对比不正确；原生截图还发现标题越出背景。改用 `BDQuotaView` 按系统 `controlBackgroundColor` 绘制，外观变化时重绘，所有内容约束直接落在同一背景内。套餐显示沿用既有映射。
 - AstroBox 2.1.0 的真实回程事件是 `{addr,payloadHex,payloadText,pkgName}`。旧插件直接转发外层，Mac 找不到顶层 `type`，无法识别 ACK。临时诊断只记录字段名确认封装，没有打印字段值；诊断已从最终源码移除。插件现校验包名并解开 `payloadText`，验证 schema／card／type／session／revision，只转发白名单字段，丢弃地址、十六进制正文与额外字段。
 - 旧 Mac 每收到 15 秒发送状态就覆盖为等待。现将发送和回执绑定到当前 session／revision，同版重发保持确认，不能让旧版或其他 session 的 ACK 确认新数据。30 秒未确认显示超时，重试不延长时限；45 秒插件无响应显示连接待恢复。状态点随结果变化，不再固定全绿。
 - Mac 每 5 秒刷新连接超时、额度过期和重置时间；每 120 秒采集真实 Codex 数据。缓存的旧状态文字不作为当前连接证据。
@@ -644,11 +644,11 @@ v19 第一次提交在 98.73418% 后连接中断；队列清空，重连后现�
 
 ## 2026-09-23 / 0.9.2 Pro 20× 与 Pro 5× 订阅显示（versionCode 21）
 
-用户已切换 Pro 20×，手环只显示 Pro。现有快照已携带 `planType`，问题是手环把 `pro` 与 `prolite` 合并映射为同一显示名称。
+现有快照已携带 `planType`，问题是手环把 `pro` 与 `prolite` 合并映射为同一显示名称。
 
 ### 证据与修改
 
-- 实时 Mac 快照回读 `planType=pro`（revision 889；更新 Mac 后 revision 892 仍为 pro）。没有通过额度百分比、Token 数量或猜测订阅价格推算倍率。
+- 已核对实时 Mac 快照的套餐字段；公开记录不保留账户具体套餐或快照序号。没有通过额度百分比、Token 数量或猜测订阅价格推算倍率。
 - 官方 [定价](https://learn.chatgpt.com/docs/pricing) 列出 Pro 5x／20x；本机官方 ChatGPT `26.917.51856 / 10492` 的计费标签 `settings.consumerBilling.planNameWithProLevels` 明确映射 `prolite → Pro 5x`、`pro → Pro 20x`。完整可复查入口见 [订阅档位](subscription-tiers.md)。
 - 手环标签改为 Pro 20×／Pro 5×；Mac 原生和 SwiftUI 参考标签同步。原 Business 5× 映射保留，未知仍为 ChatGPT；没有增加倍率协议字段或修改采集接口。
 - 重新生成 1398 个物理资源，新增两档整行白字，沿用 26px、绿色额度环和原布局。自动轮播、设置、缓存、过期与 ACK 逻辑没有修改。插件沿用 0.7.6。
@@ -673,12 +673,12 @@ v19 第一次提交在 98.73418% 后连接中断；队列清空，重连后现�
 
 - 受控重试进度已超过 50%，随后队列清空且保持连接；重新进入设备快应用列表确认 `com.jiyehoo.banddesk / v21`。正常退出 AstroBox 后原样恢复 0.7.6 插件，再次连接同一目标。本次共两次提交，第一次已经由断连和 v20 回读明确判定失败后才重试。
 
-- 插件恢复后新进入应用列表仍为 v21，通过本应用菜单“打开”启动新版；18:14:09 真实 health 回读 `planType=pro`，快照／发送／ACK revision 均为 **897**，`ackMatchesSnapshot=true`、`bandState=confirmed`。这证明当前数据已获手环回执，不代表用户已经接受新文字观感。
+- 插件恢复后新进入应用列表仍为 v21，通过本应用菜单“打开”启动新版；真实 health 显示快照、发送和 ACK 的 revision 匹配，`ackMatchesSnapshot=true`、`bandState=confirmed`。这证明当时的数据已获手环回执，不代表用户已经接受新文字观感。
 - **最终状态：手环 0.9.2 / v21 已修改、测试、构建、安装并打开；Mac 0.8.2 / build 17 已运行；插件 0.7.6 已恢复，真实 ACK 通过。** 未更改配对、手机、NFC／支付、固件或签名身份。
 
 ## 2026-09-23 / 蓝牙底座扩展只读调研
 
-- 用户反馈：“小米手环多功能桌搭1635”已连接 Mac，长按底座麦克风键会唤醒 Siri。本轮未重新按键复现。
+- 用户反馈：手环桌搭底座已连接 Mac，长按底座麦克风键会唤醒 Siri。本轮未重新按键复现。
 - 本机 macOS 26.4.1；`system_profiler` 确认目标连接、Speaker、固件 2.4.0、HFP／AVRCP／A2DP／HID／ACL；默认输入为单声道 16 kHz，默认输出和系统声音输出为双声道 44.1 kHz。这些是枚举结果，不是录放音／音质测试。
 - `ioreg` 确认 Consumer Control HID，Usage Page 0x0C / Usage 0x01；描述符含播放暂停、前后曲目、静音、音量等，未声明 Voice Command 0xCF。未证明物理按键的实际事件映射。
 - Clang 编译的只读 IOBluetooth 探针读取已配对目标的服务缓存，确认 `JL_HFP`、`JL_A2DP`、`JL_HID` 和相应标准 UUID。未扫描、重连或发送 AT 指令；未输出地址、凭据或其他配对设备。

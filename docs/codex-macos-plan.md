@@ -41,9 +41,9 @@ Band Desk Bridge（AstroBox WASI 插件）
 | 项目 | 当前证据 | 实施结论 |
 | --- | --- | --- |
 | Codex 数据 | 本机 Codex 0.155 App Server 已完成 `initialize`，实际读取到 `account/rateLimits/read` 和 `account/usage/read` | 使用官方 App Server；不读取或保存账号令牌 |
-| 额度字段 | 当前账号返回 `codex` 窗口，含 `usedPercent`、`windowDurationMins`、`resetsAt` | 协议传全部窗口，手环默认显示最长窗口（通常为本周） |
-| 套餐字段 | 当前快照回读 `planType=pro`；官方客户端计费资源区分 pro／prolite 两档 | schema v1 可选 `payload.planType`；映射 Pro 20×／5×，不从额度百分比推算倍率；见 [证据](subscription-tiers.md) |
-| Token 统计 | 当前账号实际返回累计 Token、峰值和连续使用天数；每日桶当前为空 | 只在 Mac 展示，不挤入首张手环卡 |
+| 额度字段 | 支持 `codex` 窗口及 `usedPercent`、`windowDurationMins`、`resetsAt` | 协议传全部窗口，手环默认显示最长窗口（通常为本周） |
+| 套餐字段 | 官方客户端计费资源区分 pro／prolite 两档 | schema v1 可选 `payload.planType`；映射 Pro 20×／5×，不从额度百分比推算倍率；见 [证据](subscription-tiers.md) |
+| Token 统计 | 接口支持累计 Token、峰值、连续使用天数及每日桶 | 只在 Mac 展示，不挤入首张手环卡 |
 | AstroBox | 本机 2.1.0；官方插件接口提供设备列表、定时器、Interconnect 收发；API v3 guest Future 收尾在实机触发运行时断言，当前安装二进制没有 API v4 运行时 | 保留 WASI Preview 2 / API level 3，回调透传宿主 Future，不依赖未公开的 10721 写接口 |
 | 手环通信 | Vela 官方 `system.interconnect` 支持状态、收发和诊断；`system.storage` 支持字符串缓存 | 手环使用事件驱动收包、本地缓存和过期状态，不轮询手机状态 |
 | 网络边界 | Band 9/9 Pro 不支持直接 `system.fetch` | 手环不直接访问 Mac 或 OpenAI；所有网络访问留在 Mac/AstroBox |
@@ -205,7 +205,7 @@ Mac/AstroBox → 手环使用完整快照：
 6. 0.8.0 / v16 已在唯一 Band 9 NFC / M2346B1 / 3.1.32 上完成单次提交安装；CLI 0% 超时后没有重传，后台队列完成并由设备列表回读 v16。插件 0.7.5 当时已恢复；后续 v18 视觉获得用户接受，v20 设置开关已安装。
 7. Mac 0.8.1／插件 0.7.6 修复系统外观、额度背景边界和 AstroBox 2.1 回程事件解包；已更新运行，真实同版重发和新 revision 的 ACK 均已确认。
 
-8. 0.9.2 / v21 与 Mac 0.8.2 区分 Pro 20×／5×；当前快照为 pro，映射经官方客户端计费资源核对。原生两档排版通过，重试后设备列表确认 v21。
+8. 0.9.2 / v21 与 Mac 0.8.2 区分 Pro 20×／5×；映射经官方客户端计费资源核对。原生两档排版通过，重试后设备列表确认 v21。
 
 ## 7. 验收口径
 

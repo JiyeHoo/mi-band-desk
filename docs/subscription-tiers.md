@@ -8,14 +8,14 @@
 
 | API 套餐值 | 显示 | 依据 |
 | --- | --- | --- |
-| `pro` | **Pro 20×** | 当前真实快照为 `pro`；用户确认订阅为 20×；当前官方 ChatGPT 客户端计费标签明确映射为 Pro 20x |
+| `pro` | **Pro 20×** | 核对的官方 ChatGPT 客户端计费标签映射为 Pro 20x |
 | `prolite` | **Pro 5×** | 同一客户端计费标签明确映射为 Pro 5x |
-| `self_serve_business_prolite` | **Business 5×** | 用户于 2026-09-22 确认；保留原显示 |
+| `self_serve_business_prolite` | **Business 5×** | 保留已确认的历史显示映射 |
 | 未知值 | **ChatGPT** | 不从剩余百分比推算倍率，不猜测新档位 |
 
 [官方定价](https://learn.chatgpt.com/docs/pricing) 明确存在 Pro 5x／20x 两档；[App Server 文档](https://learn.chatgpt.com/docs/app-server) 说明账户与额度接口。公开定价页不直接定义内部枚举，所以枚举到倍率的对应额外核对了本机官方客户端。
 
-本机官方客户端版本 `26.917.51856 / 10492`。只读证据：`/Applications/ChatGPT.app/Contents/Resources/app.asar` 中 `webview/assets/_virtual_settings-search-documents-c95d013b6e2b.js` 的 `settings.consumerBilling.planNameWithProLevels`，以及同文件取消续费／计划变更标签，都对应 `prolite → Pro 5x`、`pro → Pro 20x`。这是 2026-09-23 安装版本的资源，后续档位若变化需复核，不能把当前映射当作永久合同。
+核对的官方客户端版本为 `26.917.51856 / 10492`。只读证据为客户端资源中的 `settings.consumerBilling.planNameWithProLevels` 及取消续费／计划变更标签，均对应 `prolite → Pro 5x`、`pro → Pro 20x`。这是 2026-09-23 安装版本的资源，后续档位若变化需复核，不能把当前映射当作永久合同。
 
 ## 实现范围
 
