@@ -1,0 +1,448 @@
+<template>
+  <scroll class="screen" scroll-x="false" scroll-y="false" bounces="false"
+    ontouchstart="armTap" ontouchmove="trackMove" ontouchend="finishTouch" ontouchcancel="cancelTouch">
+    <swiper id="vertical-pages" class="pager" index="{{outerIndex}}" vertical="false" loop="false" indicator="false" duration="160"
+      onchange="onOuterChange" onswipestart="onNativeStart" onswipeend="onOuterEnd">
+      <div class="page">
+        <div class="canvas" show="{{!confirming}}">
+          <image class="settings-image" src="{{settingsImage}}"></image>
+          <image class="placed" src="{{keepImage}}" style="{{keepValueStyle}}"></image>
+          <image class="placed" src="{{carouselImage}}" style="{{carouselValueStyle}}"></image>
+          <div class="hit" style="{{keepHit}}" onclick="tapAction('keep')"></div>
+          <div class="hit" style="{{carouselHit}}" onclick="tapAction('carousel')"></div>
+          <div class="hit" style="{{exitHit}}" onclick="tapAction('exit')"></div>
+        </div>
+        <div class="canvas" show="{{confirming}}">
+          <image for="{{confirmSprites}}" tid="key" class="placed" src="{{$item.src}}" style="{{$item.style}}"></image>
+          <div class="hit" style="{{cancelHit}}" onclick="tapAction('cancel')"></div>
+          <div class="hit" style="{{confirmHit}}" onclick="tapAction('confirm')"></div>
+        </div>
+      </div>
+      <div class="page">
+        <swiper id="desktops" class="pager" index="{{deskIndex}}" vertical="true" loop="true" indicator="false" duration="160"
+          onchange="onDeskChange" onswipestart="onNativeStart" onswipeend="onDeskEnd">
+          <div class="page">
+          <div class="eye-well" style="{{leftEyeStyle}}"><image class="eye-image" src="{{leftEye}}"></image><div class="lid" style="{{leftTop}}"></div><div class="lid" style="{{leftBottom}}"></div></div>
+          <div class="eye-well" style="{{rightEyeStyle}}"><image class="eye-image" src="{{rightEye}}"></image><div class="lid" style="{{rightTop}}"></div><div class="lid" style="{{rightBottom}}"></div></div>
+          <image if="{{effect0}}" class="sprite" src="{{effect0}}" style="{{effect0Motion}}"></image>
+          <image if="{{effect1}}" class="sprite" src="{{effect1}}" style="{{effect1Motion}}"></image>
+          <image if="{{effect2}}" class="sprite" src="{{effect2}}" style="{{effect2Motion}}"></image>
+
+            <div class="hit" style="{{eyesHit}}" onclick="tapAction('respond')"></div>
+          </div>
+          <div class="page"><image for="{{clockSprites}}" tid="key" class="placed" src="{{$item.src}}" style="{{$item.style}}"></image></div>
+          <div class="page"><image for="{{calendarSprites}}" tid="key" class="placed" src="{{$item.src}}" style="{{$item.style}}"></image></div>
+          <div class="page">
+            <image for="{{codexSprites}}" tid="key" class="placed" src="{{$item.src}}" style="{{$item.style}}"></image>
+            <image if="{{codexLoading}}" class="placed" src="{{codexLoadingImage}}" style="{{codexLoadingStyle}}"></image>
+          </div>
+        </swiper>
+      </div>
+    </swiper>
+  </scroll>
+</template>
+<script>
+import app from '@system.app'
+import brightness from '@system.brightness'
+import interconnect from '@system.interconnect'
+import storage from '@system.storage'
+import { clockText, weekText, durationText } from '../../common/clock'
+import { layoutStyles } from '../../common/layout'
+import { CODEX_CACHE_KEY, CODEX_LOADING_TIMEOUT_MS, codexAck, codexCardState, codexDoubleTap, codexRefreshRequest, isNewerCodexSnapshot, parseCodexSnapshot } from '../../common/codex-card'
+import createKeepScreen from '../../common/keep-screen'
+import createDeskCarousel from '../../common/desk-carousel'
+import createCarouselSetting from '../../common/carousel-setting'
+import { ROBOT_SCENES } from '../../common/robot-scenes'
+import { sceneFrame, nextMotionDelay, FRAME_MS } from '../../common/animation'
+import { chooseEmotion } from '../../common/robot-motion'
+import { physicalAsset, orientedSprite, pageSprites, keepAsset, carouselAsset } from '../../common/physical-ui'
+
+let ticker=null, eyeTimer=null, motionTimer=null, resumeTimer=null, keepUITimer=null
+let motionStarted=0, motionFrame=-1, motionUpdates=0, motionLast=0, motionMaxGap=0
+let eyeEpoch=0, visible=false, lastEmotion='', keepScreen=null
+let visibleSince=null, foregroundMs=0, selectedMinutes=0
+let blockClicksUntil=0, touchOrigin=null, touchMoved=false, touchActive=false, nativeMoving=false
+let gestureDeadline=0, clockSignature='', calendarSignature='', codexSignature=''
+let codexConnection=null, codexSnapshot=null
+let codexTap=null, codexLoadingTimer=null, codexLoadingDeadline=0
+let deskCarousel=null, carouselSetting=null
+const DESKS=['eyes','clock','calendar','codex']
+function touchPoint(event) {
+  const points=event&&((event.touches&&event.touches.length)?event.touches:event.changedTouches)
+  const point=points&&points[0]
+  return point&&typeof point.clientX==='number'&&typeof point.clientY==='number'?point:null
+}
+function eventIndex(event) {
+  return event&&typeof event.index==='number'?event.index:null
+}
+export default {
+  private: {
+    view:'eyes', homeView:'eyes', flipped:false, outerIndex:1, deskIndex:0, confirming:false,
+    motionActive:false, emotion:'idle', leftEye:'/common/physical/forward/open.png',rightEye:'/common/physical/forward/open.png',
+    leftEyeStyle:'',rightEyeStyle:'',leftTop:'',leftBottom:'',rightTop:'',rightBottom:'',
+    effect0:'',effect1:'',effect2:'',effect0Motion:'',effect1Motion:'',effect2Motion:'',
+    clockSprites:[],calendarSprites:[],codexSprites:[],confirmSprites:[],settingsImage:"/common/physical/forward/settings-v091.png",keepValueStyle:"",
+    carouselEnabled:true,carouselImage:'',carouselValueStyle:'',carouselHit:'',
+    timeText:'--:--',dateText:'',weekRange:'',todayText:'',elapsedText:'',showCount:0,
+    keepState:'off',keepLabel:'关',keepImage:'',
+    codexConnected:false,codexPercentText:'—%',codexWindowText:'本周剩余',codexPlanText:'ChatGPT',codexResetText:'等待更新',codexFreshText:'连接断开',codexStale:true,codexWarning:true,codexLoading:false,codexLoadingPhase:0,codexLoadingImage:'',codexLoadingStyle:'',
+    eyesHit:'',keepHit:'',exitHit:'',cancelHit:'',confirmHit:''
+  },
+  onInit() {
+    deskCarousel=createDeskCarousel(()=>Date.now())
+    visible=false;foregroundMs=0;visibleSince=null;selectedMinutes=0;lastEmotion=''
+    blockClicksUntil=0;touchOrigin=null;touchMoved=false;touchActive=false;nativeMoving=false
+    clockSignature='';calendarSignature='';codexSignature='';codexSnapshot=null;codexTap=null;codexLoadingDeadline=0
+    this.updateLayout()
+    carouselSetting=createCarouselSetting(storage,enabled=>{
+      this.carouselEnabled=enabled;deskCarousel.setEnabled(enabled)
+      this.carouselImage=carouselAsset(this)
+    })
+    carouselSetting.load()
+    this.initCodex()
+    keepScreen=createKeepScreen(brightness,result=>{
+      this.keepState=result.state
+      if(!result.deadline)selectedMinutes=0
+      this.keepLabel=result.state==='pending'?'申请中':result.state==='error'?'失败':result.state==='on'?(selectedMinutes===30?'30 分':'2 小时'):'关'
+      this.clearKeepUI()
+      // A fast pending -> success round trip should replace only the final small label.
+      if(result.state==='pending')keepUITimer=setTimeout(()=>{keepUITimer=null;this.keepImage=keepAsset(this)},120)
+      else this.keepImage=keepAsset(this)
+    })
+    this.refresh()
+  },
+  onShow() {
+    this.stopTicker();this.stopEyes();this.clearResume();visible=true
+    touchOrigin=null;touchActive=false;touchMoved=false;nativeMoving=false;blockClicksUntil=0
+    visibleSince=Date.now();this.showCount+=1;this.refresh()
+    if(keepScreen)keepScreen.show()
+    ticker=setInterval(()=>this.refresh(),1000)
+    this.checkCodexConnection();this.requestCodexRefresh()
+    this.syncView();this.resumeEyes()
+    deskCarousel.show(this.outerIndex===1?this.deskIndex:-1)
+    console.log('[desk] show count='+this.showCount)
+  },
+  onHide() {
+    deskCarousel.stop()
+    visible=false;this.stopTicker();this.stopEyes();this.clearResume()
+    this.stopCodexLoading();codexTap=null
+    if(keepScreen)keepScreen.hide();this.clearKeepUI()
+    console.log('[desk] hide')
+  },
+  onDestroy() {
+    deskCarousel.stop()
+    if(carouselSetting)carouselSetting.dispose()
+    visible=false;this.stopTicker();this.stopEyes();this.clearResume()
+    this.stopCodexLoading();codexTap=null
+    if(keepScreen)keepScreen.dispose();this.clearKeepUI()
+    keepScreen=null
+    if(codexConnection){codexConnection.onmessage=null;codexConnection.onopen=null;codexConnection.onclose=null;codexConnection.onerror=null}
+    codexConnection=null;console.log('[desk] destroy')
+  },
+  onBackPress() {
+    this.setView('menu');blockClicksUntil=Date.now()+200
+    console.log('[desk] back intercepted');return true
+  },
+  updateLayout() {
+    const styles=layoutStyles(this.flipped)
+    Object.keys(styles).forEach(key=>{this[key]=styles[key]})
+    this.keepImage=keepAsset(this)
+    this.carouselImage=carouselAsset(this)
+    this.settingsImage=physicalAsset('settings-v091',this.flipped);this.confirmSprites=pageSprites(this,'confirm')
+    this.codexLoadingImage=physicalAsset('codex-v082-loading-'+this.codexLoadingPhase,this.flipped)
+    clockSignature='';calendarSignature='';codexSignature='';this.refreshText();this.refreshCodex()
+  },
+  refreshText() {
+    const c=this.flipped+'|'+this.timeText+'|'+this.dateText
+    if(this.dateText&&c!==clockSignature){clockSignature=c;this.clockSprites=pageSprites(this,'clock')}
+    const d=this.flipped+'|'+this.weekRange+'|'+this.todayText
+    if(this.weekRange&&d!==calendarSignature){calendarSignature=d;this.calendarSprites=pageSprites(this,'calendar')}
+  },
+  refreshCodex() {
+    const state=codexCardState(codexSnapshot,Date.now(),this.codexConnected)
+    this.codexPercentText=state.percentText;this.codexWindowText=state.windowText;this.codexPlanText=state.planText;this.codexResetText=state.resetText;this.codexFreshText=state.freshText;this.codexStale=state.stale;this.codexWarning=state.warning
+    const signature=this.flipped+'|'+state.percentText+'|'+state.windowText+'|'+state.planText+'|'+state.resetText+'|'+state.freshText+'|'+state.warning
+    if(signature!==codexSignature){codexSignature=signature;this.codexSprites=pageSprites(this,'codex')}
+  },
+  refresh() {
+    const text=clockText(new Date(Date.now())),week=weekText(new Date(Date.now()))
+    this.timeText=text.time;this.dateText=text.date;this.weekRange=week.range;this.todayText=week.today
+    week.days.forEach((day,i)=>{this['day'+i+'Week']=day.label;this['day'+i+'Date']=day.date;this['day'+i+'Today']=day.today;this['day'+i+'Mark']=day.mark;this['day'+i+'Festival']=day.festival})
+    this.elapsedText=durationText(foregroundMs+(visibleSince===null?0:Math.max(0,Date.now()-visibleSince)))
+    this.refreshText();this.refreshCodex();if(keepScreen)keepScreen.tick()
+    if((touchActive||nativeMoving)&&Date.now()>=gestureDeadline){touchActive=false;nativeMoving=false;touchOrigin=null;this.resumeEyes()}
+    this.advanceDesk()
+  },
+  advanceDesk() {
+    if(!visible||!deskCarousel)return
+    const next=deskCarousel.next(touchActive||nativeMoving||this.codexLoading)
+    if(next===null){this.resumeEyes();return}
+    try {
+      const pager=this.$element('desktops')
+      if(!pager||typeof pager.swipeTo!=='function'){deskCarousel.rejected();return}
+      this.stopEyes();this.clearResume();codexTap=null
+      pager.swipeTo({index:next})
+      console.log('[desk] auto request='+next)
+    } catch(error) {deskCarousel.rejected();this.resumeEyes();console.warn('[desk] auto swipe unavailable')}
+  },
+  stopTicker() {
+    if(ticker!==null)clearInterval(ticker);ticker=null
+    if(visibleSince!==null)foregroundMs+=Math.max(0,Date.now()-visibleSince)
+    visibleSince=null
+  },
+  stopEyes() {
+    const duration = Date.now() - motionStarted
+    if (this.motionActive && duration >= 1000) console.log('[desk] motion sampledUpdates/s=' + Math.round(motionUpdates * 1000 / duration) + ' longestScheduledGapMs=' + motionMaxGap)
+    eyeEpoch += 1
+    if (eyeTimer !== null) clearTimeout(eyeTimer)
+    if (motionTimer !== null) clearTimeout(motionTimer)
+    eyeTimer = null; motionTimer = null; this.motionActive = false
+  },
+  scheduleEyes(delay) {
+    if (!visible || this.view !== 'eyes') return
+    if (eyeTimer !== null) clearTimeout(eyeTimer)
+    const epoch = eyeEpoch
+    eyeTimer = setTimeout(() => {
+      if (epoch !== eyeEpoch || !visible || this.view !== 'eyes') return
+      eyeTimer = null
+      this.playEmotion(chooseEmotion(lastEmotion, Math.random()))
+    }, delay)
+  },
+  playEmotion(name) {
+    if (!visible || this.view !== 'eyes' || !ROBOT_SCENES[name]) return
+    this.stopEyes(); lastEmotion = name
+    const scene = ROBOT_SCENES[name]
+    this.emotion = name; this.leftEye = orientedSprite(scene.left,this.flipped); this.rightEye = orientedSprite(scene.right,this.flipped)
+    this.effect0 = orientedSprite(scene.effects[0],this.flipped); this.effect1 = orientedSprite(scene.effects[1],this.flipped); this.effect2 = orientedSprite(scene.effects[2],this.flipped)
+    this.motionActive = true; motionStarted = Date.now(); motionFrame = -1; motionUpdates = 0; motionLast = motionStarted; motionMaxGap = 0
+    this.tickMotion(eyeEpoch)
+    this.scheduleEyes(scene.duration * 2)
+    console.log('[desk] emotion=' + name)
+  },
+  tickMotion(epoch) {
+    if (epoch !== eyeEpoch || !visible || this.view !== 'eyes' || !this.motionActive) return
+    const now = Date.now(), frameIndex = Math.floor(Math.max(0, now - motionStarted) / FRAME_MS)
+    const delay = nextMotionDelay(ROBOT_SCENES[this.emotion], now - motionStarted)
+    // Avoid repeated active frames, but always settle the final pose before a
+    // resting hold: floating-point boundaries can share the previous frame index.
+    if (frameIndex !== motionFrame || delay > FRAME_MS) {
+      motionFrame = frameIndex; motionMaxGap = Math.max(motionMaxGap, now - motionLast); motionLast = now; motionUpdates += 1
+      const frame = sceneFrame(ROBOT_SCENES[this.emotion], now - motionStarted, this.flipped)
+      Object.keys(frame).forEach((key) => { if (this[key] !== frame[key]) this[key] = frame[key] })
+    }
+    motionTimer = setTimeout(() => { if (epoch !== eyeEpoch) return; motionTimer = null; this.tickMotion(epoch) }, Math.max(1, delay - (Date.now() - now)))
+  },
+
+  clearKeepUI() {if(keepUITimer!==null)clearTimeout(keepUITimer);keepUITimer=null},
+  clearResume() {if(resumeTimer!==null)clearTimeout(resumeTimer);resumeTimer=null},
+  resumeEyes() {
+    if(visible&&this.view==='eyes'&&!touchActive&&!nativeMoving&&!this.motionActive)this.playEmotion('blink')
+  },
+  syncView() {
+    this.homeView=DESKS[this.deskIndex]||'eyes'
+    this.view=this.outerIndex===0?(this.confirming?'confirm':'menu'):this.homeView
+    if(deskCarousel)deskCarousel.select(this.outerIndex===1?this.deskIndex:-1)
+    if(this.view!=='eyes')this.stopEyes()
+    if(this.view!=='codex')this.stopCodexLoading()
+  },
+  setView(view) {
+    this.clearResume();this.stopEyes()
+    codexTap=null
+    if(view==='menu'||view==='confirm'){this.confirming=view==='confirm';this.outerIndex=0}
+    else{const index=DESKS.indexOf(view);if(index<0)return;this.deskIndex=index;this.outerIndex=1;this.confirming=false}
+    this.syncView()
+    blockClicksUntil=Date.now()+180
+    this.resumeAfterGesture()
+  },
+  onNativeStart() {
+    if(!visible)return
+    deskCarousel.nativeStart()
+    codexTap=null
+    nativeMoving=true;touchMoved=true;gestureDeadline=Date.now()+1200;blockClicksUntil=Date.now()+250
+    this.stopEyes();this.clearResume();console.log('[desk] native start')
+  },
+  onDeskChange(event) {
+    if(!visible)return
+    const index=eventIndex(event);if(index===null||index<0||index>3)return
+    this.deskIndex=index;this.syncView();this.resumeEyes();console.log('[desk] native desk='+index)
+  },
+  onOuterChange(event) {
+    if(!visible)return
+    const index=eventIndex(event);if(index===null||index<0||index>1)return
+    this.outerIndex=index
+    if(index===1)this.confirming=false
+    this.syncView();console.log('[desk] native outer='+index)
+  },
+  onDeskEnd(event) {this.onDeskChange(event);this.endNative()},
+  onOuterEnd(event) {this.onOuterChange(event);this.endNative()},
+  endNative() {
+    if(!visible)return
+    deskCarousel.nativeEnd()
+    nativeMoving=false;touchActive=false;touchOrigin=null;blockClicksUntil=Date.now()+100
+    this.resumeEyes();console.log('[desk] native end')
+  },
+  armTap(event) {
+    if(!visible)return
+    deskCarousel.input(true)
+    this.clearResume();touchOrigin=touchPoint(event);touchMoved=false;touchActive=true
+    gestureDeadline=Date.now()+1200;blockClicksUntil=0
+    // Stop eye property traffic before the native pager handles the first move.
+    this.stopEyes()
+  },
+  trackMove(event) {
+    if(visible&&touchActive)deskCarousel.input(true)
+    const p=touchPoint(event)
+    if(p&&touchOrigin&&Math.max(Math.abs(p.clientX-touchOrigin.clientX),Math.abs(p.clientY-touchOrigin.clientY))>=8){touchMoved=true;blockClicksUntil=Date.now()+250}
+    gestureDeadline=Date.now()+1200
+  },
+  finishTouch(event) {
+    if(!visible)return
+    const point=touchPoint(event)||touchOrigin
+    this.trackMove(event);const tapped=!touchMoved&&!nativeMoving&&Date.now()>=blockClicksUntil
+    deskCarousel.input(false)
+    touchActive=false;touchOrigin=null
+    if(touchMoved)blockClicksUntil=Date.now()+250
+    if(tapped&&this.view==='codex')this.handleCodexTap(point)
+    this.resumeAfterGesture()
+  },
+  cancelTouch() {
+    if(!visible)return
+    deskCarousel.input(false)
+    touchActive=false;touchOrigin=null;touchMoved=true;blockClicksUntil=Date.now()+250
+    codexTap=null
+    this.resumeAfterGesture()
+  },
+  resumeAfterGesture() {
+    if(!visible)return
+    this.clearResume()
+    resumeTimer=setTimeout(()=>{resumeTimer=null;if(!visible)return;nativeMoving=false;this.resumeEyes()},220)
+  },
+  tapAction(action) {
+    if(!visible||Date.now()<blockClicksUntil)return
+    deskCarousel.input(false)
+    touchActive=false;nativeMoving=false;this.clearResume()
+    console.log('[desk] action='+action)
+    if(this.view==='eyes'&&action==='respond')this.playEmotion(chooseEmotion(lastEmotion,Math.random()))
+    else if(this.view==='menu'){
+      if(action==='keep')this.cycleKeep()
+      else if(action==='carousel')carouselSetting.toggle()
+      else if(action==='exit')this.setView('confirm')
+    }else if(this.view==='confirm'){
+      if(action==='cancel')this.setView('menu')
+      else if(action==='confirm')this.exitApp()
+    }
+  },
+  cycleKeep() {
+    if(!keepScreen)return
+    if(this.keepState==='error')selectedMinutes=0
+    selectedMinutes=selectedMinutes===0?30:selectedMinutes===30?120:0
+    keepScreen.select(selectedMinutes)
+  },
+  initCodex() {
+    try {
+      storage.get({
+        key:CODEX_CACHE_KEY,
+        default:'',
+        success:value=>{
+          try {
+            const cached=value&&typeof value==='object'&&value.data!==undefined?value.data:value
+            const snapshot=parseCodexSnapshot(cached)
+            if(snapshot)this.applyCodexSnapshot(snapshot,false,false)
+          } catch(error) { console.warn('[codex] cache ignored') }
+        },
+        fail:()=>console.warn('[codex] cache unavailable')
+      })
+    } catch(error) { console.warn('[codex] cache unavailable') }
+    try {
+      codexConnection=interconnect.instance()
+      codexConnection.onmessage=event=>this.receiveCodex(event)
+      codexConnection.onopen=()=>{this.setCodexConnected(true);if(visible)this.requestCodexRefresh()}
+      codexConnection.onclose=()=>this.setCodexConnected(false)
+      codexConnection.onerror=()=>this.setCodexConnected(false)
+      this.checkCodexConnection()
+    } catch(error) {
+      codexConnection=null;this.setCodexConnected(false)
+      console.warn('[codex] interconnect unavailable')
+    }
+  },
+  setCodexConnected(connected) {
+    const next=!!connected
+    if(this.codexConnected===next)return
+    this.codexConnected=next;codexSignature='';this.refreshCodex()
+  },
+  checkCodexConnection() {
+    if(!codexConnection)return
+    try {codexConnection.getReadyState({success:data=>this.setCodexConnected(data&&data.status===1),fail:()=>this.setCodexConnected(false)})}
+    catch(error){this.setCodexConnected(false);console.warn('[codex] state unavailable')}
+  },
+  receiveCodex(event) {
+    try {
+      const snapshot=parseCodexSnapshot(event&&event.data!==undefined?event.data:event)
+      if(!snapshot)return
+      if(codexSnapshot&&snapshot.sessionId===codexSnapshot.sessionId&&snapshot.revision===codexSnapshot.revision){this.sendCodex(codexAck(codexSnapshot,Date.now()));return}
+      if(!isNewerCodexSnapshot(codexSnapshot&&codexSnapshot.sessionId,codexSnapshot&&codexSnapshot.revision,snapshot))return
+      this.stopCodexLoading()
+      this.applyCodexSnapshot(snapshot,true,true)
+    } catch(error) { console.warn('[codex] message ignored') }
+  },
+  applyCodexSnapshot(snapshot,persist,acknowledge) {
+    codexSnapshot=snapshot;codexSignature='';this.refreshCodex()
+    if(persist)try{storage.set({key:CODEX_CACHE_KEY,value:JSON.stringify(snapshot),fail:()=>console.warn('[codex] cache failed')})}catch(error){console.warn('[codex] cache failed')}
+    if(acknowledge)this.sendCodex(codexAck(snapshot,Date.now()))
+  },
+  sendCodex(message,onFail) {
+    if(!codexConnection){if(onFail)onFail();return false}
+    try {
+      codexConnection.send({data:message,success:()=>this.setCodexConnected(true),fail:()=>{this.setCodexConnected(false);if(onFail)onFail()}})
+      return true
+    } catch(error) {
+      this.setCodexConnected(false);if(onFail)onFail();console.warn('[codex] send unavailable');return false
+    }
+  },
+  handleCodexTap(point) {
+    const result=codexDoubleTap(codexTap,Date.now(),point);codexTap=result.next
+    if(result.triggered)this.requestCodexRefresh(true)
+  },
+  startCodexLoading() {
+    if(this.codexLoading)return false
+    this.codexLoading=true;this.codexLoadingPhase=0;this.codexLoadingImage=physicalAsset('codex-v082-loading-0',this.flipped);codexLoadingDeadline=Date.now()+CODEX_LOADING_TIMEOUT_MS;this.tickCodexLoading();return true
+  },
+  tickCodexLoading() {
+    if(!this.codexLoading||!visible)return
+    if(codexLoadingTimer!==null)clearTimeout(codexLoadingTimer)
+    codexLoadingTimer=setTimeout(()=>{codexLoadingTimer=null;if(!this.codexLoading||!visible)return;if(Date.now()>=codexLoadingDeadline){this.stopCodexLoading();return}this.codexLoadingPhase=(this.codexLoadingPhase+1)%4;this.codexLoadingImage=physicalAsset('codex-v082-loading-'+this.codexLoadingPhase,this.flipped);this.tickCodexLoading()},220)
+  },
+  stopCodexLoading() {
+    if(codexLoadingTimer!==null)clearTimeout(codexLoadingTimer);codexLoadingTimer=null;codexLoadingDeadline=0
+    if(this.codexLoading){this.codexLoading=false;this.codexLoadingPhase=0}
+  },
+  requestCodexRefresh(showLoading) {
+    if(showLoading&&!this.startCodexLoading())return false
+    const sent=this.sendCodex(codexRefreshRequest(codexSnapshot&&codexSnapshot.sessionId,codexSnapshot&&codexSnapshot.revision,Date.now()),()=>{if(showLoading)this.stopCodexLoading()})
+    if(!sent&&showLoading)this.stopCodexLoading()
+    return sent
+  },
+  exitApp() {
+    if(this.view!=='confirm')return
+    deskCarousel.stop()
+    if(carouselSetting)carouselSetting.dispose()
+    visible=false;this.stopTicker();this.stopEyes();this.clearResume()
+    this.stopCodexLoading();codexTap=null
+    if(keepScreen)keepScreen.dispose();this.clearKeepUI()
+    app.terminate()
+  }
+}
+</script>
+<style>
+.screen { width:192px;height:490px;background-color:#000000; }
+.pager { width:192px;height:490px;background-color:#000000; }
+.page { position:relative;width:192px;height:490px;background-color:#000000; }
+.canvas { position:absolute;left:0;top:0;width:192px;height:490px;background-color:#000000; }
+.placed { position:absolute;object-fit:none; }
+.settings-image { position:absolute;left:0;top:0;width:192px;height:490px;object-fit:none; }
+.sprite { position:absolute;object-fit:contain; }
+.eye-well { position:absolute;background-color:#000000; }
+.eye-image { position:absolute;left:0;top:0;width:128px;height:128px;object-fit:contain; }
+.lid { position:absolute;background-color:#000000; }
+.hit { position:absolute;background-color:rgba(0,0,0,0); }
+</style>

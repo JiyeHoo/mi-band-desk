@@ -1,0 +1,18 @@
+{
+  "name": "Band Desk Bridge",
+  "icon": "icon.png",
+  "version": "0.7.6",
+  "description": "将本机 Codex 额度快照转发到机器人桌搭手环卡片",
+  "author": "jiyehoo",
+  "website": "https://github.com/AstralSightStudios/AstroBox",
+  "entry": "band_desk_bridge.wasm",
+  "wasi_version": 2,
+  "api_level": 3,
+  "permissions": [
+    "network",
+    "device",
+    "interconnect",
+    "register_interconnect_recv"
+  ],
+  "additional_files": []
+}

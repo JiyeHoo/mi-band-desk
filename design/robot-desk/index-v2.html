@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>桌搭机器人 · 手环 9 设计预览</title>
+<link rel="icon" href="data:,">
+<style>
+:root{--paper:#f1f3f1;--ink:#182723;--muted:#61716b;--line:#d7ded9;--accent:#087666;--surface:#fafbf9}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif}button,a,input{touch-action:manipulation}button{font:inherit;color:inherit;cursor:pointer}button:focus-visible,a:focus-visible,input:focus-visible,canvas:focus-visible{outline:3px solid #0a8f85;outline-offset:4px}button:hover{border-color:#839e93;background:#eaf0eb}button{transition:background .15s,border-color .15s}main{max-width:1240px;margin:auto;padding:40px 40px 56px}.topline{display:flex;justify-content:space-between;gap:16px;font-size:12px;letter-spacing:1px;color:var(--muted)}.brand{color:var(--accent);font-weight:650}.intro{margin:34px 0 26px;display:flex;align-items:end;justify-content:space-between;gap:24px}h1{font-size:clamp(28px,4vw,43px);font-weight:650;letter-spacing:-1.6px;line-height:1.25;margin:0 0 12px}p{line-height:1.7;margin:0;color:var(--muted)}.tag{font-size:12px;border:1px solid var(--line);border-radius:30px;padding:7px 12px;white-space:nowrap}.workspace{display:grid;grid-template-columns:minmax(0,1fr) 290px;gap:24px}.preview{min-width:0;background:#e5eae5;border:1px solid #d3dbd4;border-radius:24px;padding:22px 22px 25px}.preview-meta{display:flex;justify-content:space-between;gap:12px;font-size:12px;color:#55675c}.stage{min-height:270px;display:flex;align-items:center;justify-content:center;padding:42px 0 34px}.band{width:100%;max-width:720px;background:#000;border:6px solid #202723;border-radius:200px;box-shadow:0 0 0 1px #929b93,0 13px 20px -12px #1b34275e;line-height:0;overflow:hidden}.band canvas{width:100%;height:auto;display:block;touch-action:none;cursor:grab;aspect-ratio:490/192}.band canvas:active{cursor:grabbing}.nav{display:flex;justify-content:center;gap:6px;flex-wrap:wrap}button.chip{border:1px solid var(--line);border-radius:24px;background:transparent;font-size:13px;padding:9px 15px;min-height:38px}.chip[aria-pressed="true"]{color:#fff;background:#19483c;border-color:#19483c}.hint{font-size:12px;text-align:center;margin-top:14px;color:#566b5f}.sidebar{background:var(--surface);border:1px solid var(--line);border-radius:24px;padding:22px}.eyebrow{font-size:11px;letter-spacing:1.2px;color:var(--muted);margin:0 0 13px}.sidebar h2{font-size:17px;margin:0 0 14px}.styles{display:grid;gap:8px}.style-option{text-align:left;border:1px solid var(--line);border-radius:12px;padding:12px;background:transparent;width:100%;display:flex;gap:10px;align-items:center}.style-option[aria-pressed="true"]{border-color:#087666;background:#eaf3ed}.style-option b{font-size:14px;font-weight:600}.style-option small{display:block;font-size:11px;line-height:1.5;color:var(--muted);margin-top:3px}.style-id{font-family:monospace;color:var(--accent);font-size:13px}.swatches{display:flex;gap:8px;margin:13px 0 19px}.swatch{width:52px;height:32px;border-radius:8px;border:2px solid transparent;position:relative;background:#070c0b}.swatch span{display:block;width:24px;height:9px;margin:auto;border-radius:3px;background:var(--swatch)}.swatch[aria-pressed="true"]{border-color:#728c7f}.line{height:1px;background:var(--line);margin:20px 0}.option{display:flex;align-items:center;gap:9px;font-size:13px;margin:12px 0;cursor:pointer}.option input{accent-color:var(--accent);width:16px;height:16px}.note{font-size:11px;line-height:1.7;margin-top:16px}.section-head{display:flex;justify-content:space-between;align-items:baseline;gap:16px;margin:32px 0 15px}.section-head h2{font-size:21px;font-weight:600;margin:0}.section-head p{font-size:12px}.expressions{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}.expression{padding:12px;border:1px solid var(--line);border-radius:16px;background:var(--surface);text-align:left;min-width:0}.expression[aria-pressed="true"]{border-color:#087666;box-shadow:inset 0 0 0 1px #087666}.expression canvas{display:block;width:100%;aspect-ratio:490/192;border-radius:70px;background:#000}.expression .label{display:flex;justify-content:space-between;margin:11px 2px 4px;font-size:13px;font-weight:550}.expression small{font-size:11px;color:var(--muted);display:block;margin-left:2px}.rules{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;border-top:1px solid var(--line);margin-top:30px;padding-top:22px}.rules h3{font-size:13px;margin:0 0 8px}.rules p{font-size:12px}.foot{border-top:1px solid var(--line);margin-top:26px;padding-top:17px;font-size:11px;color:var(--muted);line-height:1.8}.foot a{color:#36796a}.status{font-variant-numeric:tabular-nums}#announce{font-size:11px;color:#466050;text-align:center;min-height:18px;margin-top:12px}
+@media(max-width:900px){main{padding:24px}.workspace{grid-template-columns:1fr}.sidebar{display:grid;grid-template-columns:1.5fr 1fr;gap:24px}.sidebar .line{display:none}.stage{min-height:230px}.note{margin-top:10px}}
+@media(max-width:540px){main{padding:20px 14px 30px}.intro{margin-top:26px;display:block}.intro .tag{display:inline-block;margin-top:12px}.topline{font-size:10px}.preview{padding:16px 12px}.stage{padding:35px 0;min-height:180px}.band{border-width:4px}.sidebar{display:block;padding:20px}.sidebar .line{display:block}.expressions{grid-template-columns:repeat(2,minmax(0,1fr))}.rules{grid-template-columns:1fr;gap:18px}.section-head{display:block}.section-head p{margin-top:8px}.preview-meta{font-size:10px}.hint{font-size:11px}.nav{gap:5px}button.chip{padding:9px 12px}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body><main>
+<div class="topline"><span class="brand">手环 9 · 桌搭机器人</span><span>设计讨论稿 02 / 2026.09.20</span></div>
+<header class="intro"><div><h1>一双眼睛，陪你待在桌边。</h1><p>首页只留表情。左右换桌面，上滑再设置。</p></div><span class="tag">横屏胶囊 · 490 × 192</span></header>
+<div class="workspace">
+<section class="preview" aria-label="交互预览">
+<div class="preview-meta"><span id="view-label">眼睛首页 · 随机待机</span><span class="status" id="mood-label">安静待机</span></div>
+<div class="stage"><div class="band"><canvas id="screen" width="980" height="384" tabindex="0" aria-label="手环交互预览。左右方向键换桌面，上键打开设置，下键返回，空格回应。"></canvas></div></div>
+<nav class="nav" aria-label="预览页面"><button class="chip" data-view="eyes" aria-pressed="true">眼睛</button><button class="chip" data-view="clock" aria-pressed="false">时钟</button><button class="chip" data-view="calendar" aria-pressed="false">日历</button><button class="chip" data-view="settings" aria-pressed="false">上滑设置</button><button class="chip" data-view="confirm" aria-pressed="false">退出确认</button></nav>
+<p class="hint">可直接在屏幕上滑动 · 点击眼睛会回应 · 键盘 ← → ↑ ↓ 同样可用</p>
+<div id="announce" role="status" aria-live="polite">交互示意：不会改变电脑或手环的常亮设置</div>
+</section>
+<aside class="sidebar"><div><div class="eyebrow">先选一种眼形</div><h2>同一套界面，三种性格</h2><div class="styles">
+<button class="style-option" data-style="soft" aria-pressed="true"><span class="style-id">A</span><span><b>圆角眼 · 推荐</b><small>大色块，安静又有表情</small></span></button>
+<button class="style-option" data-style="ring" aria-pressed="false"><span class="style-id">B</span><span><b>圆环眼</b><small>改编 Grobot，眼睑与弹性动作</small></span></button>
+<button class="style-option" data-style="pixel" aria-pressed="false"><span class="style-id">C</span><span><b>像素眼</b><small>方形轮廓，复古小机器人</small></span></button>
+</div></div><div><div class="line"></div><div class="eyebrow">默认白色 · 情绪局部点彩</div><div class="swatches" role="group" aria-label="主题颜色">
+<button class="swatch" data-color="#70f0dc" style="--swatch:#70f0dc" aria-label="青色" aria-pressed="false"><span></span></button><button class="swatch" data-color="#ffffff" style="--swatch:#ffffff" aria-label="白色" aria-pressed="true"><span></span></button><button class="swatch" data-color="#f3be6b" style="--swatch:#f3be6b" aria-label="琥珀" aria-pressed="false"><span></span></button></div>
+<label class="option"><input id="random" type="checkbox" checked>随机播放表情</label><label class="option"><input id="safe" type="checkbox">显示中央安全区</label><label class="option"><input id="pause" type="checkbox">暂停动作，查看眼形</label>
+<p class="note">预览按屏幕比例缩放，不等于实物尺寸。系统启用“减少动态效果”时默认暂停，可手动恢复。</p></div></aside>
+</div>
+<div class="section-head"><h2>十四组动作，白色眼睛也有丰富情绪。</h2><p>点选动作可单独预览；随机模式以待机和小幅巡视为主。</p></div>
+<section class="expressions" id="expressions" aria-label="动作库"></section>
+<section class="rules"><div><h3>两端弧边，主动留空</h3><p>眼睛、文字和按钮都收进中央直边区域。确认按钮在安全区内左右排布，叉与勾不贴屏幕两端。</p></div><div><h3>每个桌面只做一件事</h3><p>眼睛不叠时间、电量或按钮；时钟保留大数字；日历只显示本周七天，放大星期与日期，突出今天。</p></div><div><h3>设置用完，回到原桌面</h3><p>上滑设置常亮、翻转或退出；下滑返回。退出需要再点右侧勾，左侧叉取消并返回设置。</p></div></section>
+<footer class="foot">这是 HTML 视觉与交互原型，尚未部署到手环；动画速度、续航、系统返回和底座覆盖以真机为准。<br>开源参考：<a href="https://github.com/FluxGarage/RoboEyes" target="_blank" rel="noreferrer">RoboEyes</a> · <a href="https://github.com/tanmaywankar/Grobot_Animations" target="_blank" rel="noreferrer">Grobot_Animations</a>（部分圆环与弹簧代码改编，<a href="./Grobot-LICENSE.txt">MIT 许可</a>） · <a href="./README.md">调研记录与待定需求</a>。其余眼形和胶囊布局为本项目绘制。</footer>
+</main>
+<script>
+'use strict';
+// Browser-only design prototype. Not a Vela runtime implementation.
+const moods=[['idle','安静待机','轻微呼吸，不抢注意力'],['blink','自然眨眼','快速闭合，轻轻睁开'],['look','左右巡视','先看左边，再看右边'],['happy','开心弯眼','弯起眼睛，轻微上扬'],['curious','好奇歪眼','一高一低，侧看一下'],['surprise','短暂惊讶','睁大一下，恢复平静'],['sleepy','困倦半闭','慢慢垂下眼睑'],['wink','俏皮眨眼','单眼回应，不加嘴巴'],['love','比心','白色笑眼，粉色爱心轻跳'],['cry','流泪','委屈眼睛，蓝色泪滴滑落'],['blush','害羞','微微低头，两颊泛红'],['stars','星星眼','白眼睛里亮起金色星光'],['angry','小生气','皱起眼睑，红色气鼓鼓'],['dizzy','晕乎乎','旋转圈圈，慢慢找回方向']];
+const state={style:'soft',color:'#ffffff',view:'eyes',lastView:'eyes',mood:'idle',moodTime:0,nextMood:6,blinkAt:3.1,time:0,paused:matchMedia('(prefers-reduced-motion: reduce)').matches,random:true,safe:false,flipped:false,keep:0};
+const canvas=document.querySelector('#screen'),ctx=canvas.getContext('2d');
+const q=s=>document.querySelector(s), qa=s=>[...document.querySelectorAll(s)];
+const controls=[['keep',108,76,84,66],['flip',203,76,84,66],['exit',298,76,84,66]];
+const lerp=(a,b,t)=>a+(b-a)*t, clamp=(v,a,b)=>Math.max(a,Math.min(b,v));
+// Adapted from Grobot_Animations::applySpring, MIT, (c) 2026 tanmay_wankar.
+// See Grobot-LICENSE.txt; upstream commit 858d8da648c9e71ff9b9f5e6f558ba85293a70fb.
+function spring(current,velocity,target,dt,stiffness=180,damping=18){velocity+=((target-current)*stiffness-velocity*damping)*dt;return [current+velocity*dt,velocity]}
+const current={dx:0,dy:0,lw:66,rw:66,lh:80,rh:80,top:0,bot:0,pupil:27,radius:40},velocity={};
+function targetFor(mood,t,style){
+ const p={dx:0,dy:Math.sin(t*1.5)*1.2,lw:66,rw:66,lh:80,rh:80,top:0,bot:0,pupil:27,radius:40};
+ if(mood==='look'){p.dx=t%5<2.4?-13:13;p.dy=-2}
+ if(mood==='happy'){p.lh=44;p.rh=44;p.bot=44;p.dy=-4+Math.sin(t*5)*1.4}
+ if(mood==='curious'){p.dx=9;p.lh=64;p.rh=88;p.top=6;p.dy=-3}
+ if(mood==='surprise'){p.lw=p.rw=72;p.lh=p.rh=92;p.radius=44;p.pupil=17}
+ if(mood==='sleepy'){p.lh=p.rh=29;p.top=43;p.dy=6}
+ if(mood==='wink'){p.lh=7;p.rh=75;p.dy=-2}
+ if(style==='pixel'){p.lw=p.rw=66;p.lh*=.8;p.rh*=.8}
+ return p;
+}
+function rounded(c,x,y,w,h,r,color){c.fillStyle=color;c.beginPath();c.roundRect(x,y,w,Math.max(1,h),Math.min(r,w/2,h/2));c.fill()}
+function eyePair(c,p,style,color,blink=1,mood='idle',t=1.2){
+ if(['love','cry','blush','stars','angry','dizzy'].includes(mood)){drawRich(c,mood,t,color);return}
+ const centers=[194+p.dx,296+p.dx];
+ centers.forEach((x,i)=>{
+  const h=(i?p.rh:p.lh)*blink,w=i?p.rw:p.lw,y=96+p.dy;
+  if(style==='ring'){
+   // Circular eye/pupil and top/bottom lid construction adapted from Grobot.
+   const r=p.radius,top=p.top+(mood==='curious'?(i?-5:17):0);c.save();c.beginPath();c.rect(x-r-1,y-r+(1-blink)*r*2+top,r*2+2,Math.max(0,r*2*blink-top-p.bot));c.clip();
+   c.fillStyle=color;c.beginPath();c.arc(x,y,r,0,Math.PI*2);c.fill();c.fillStyle='#000';c.beginPath();c.arc(x,y,p.pupil,0,Math.PI*2);c.fill();c.restore();
+   if(mood==='wink'&&i===0){c.fillStyle='#000';c.fillRect(x-r-2,y-r-2,r*2+4,r*2+4);rounded(c,x-r,y,r*2,5,3,color)}
+  }else if(mood==='happy'&&blink>.7){
+   c.strokeStyle=color;c.lineWidth=style==='pixel'?13:14;c.lineCap=style==='pixel'?'butt':'round';c.beginPath();c.moveTo(x-w/2,y+6);c.quadraticCurveTo(x,y-32,x+w/2,y+6);c.stroke();
+  }else{rounded(c,x-w/2,y-h/2,w,Math.max(4,h),style==='pixel'?3:21,color)}
+ });
+}
+
+function heart(c,x,y,r,color){c.fillStyle=color;c.beginPath();c.moveTo(x,y+r*.8);c.bezierCurveTo(x-r*1.7,y-r*.3,x-r*.9,y-r*1.6,x,y-r*.65);c.bezierCurveTo(x+r*.9,y-r*1.6,x+r*1.7,y-r*.3,x,y+r*.8);c.fill()}
+function star(c,x,y,r,color,turn=0){c.save();c.translate(x,y);c.rotate(turn);c.fillStyle=color;c.beginPath();for(let i=0;i<8;i++){const a=i*Math.PI/4-Math.PI/2,k=i%2?r*.35:r;c.lineTo(Math.cos(a)*k,Math.sin(a)*k)}c.closePath();c.fill();c.restore()}
+function tear(c,x,y,r){c.fillStyle='#68baff';c.beginPath();c.moveTo(x,y-r*1.7);c.bezierCurveTo(x-r*1.4,y,x-r,y+r,x,y+r);c.bezierCurveTo(x+r,y+r,x+r*1.4,y,x,y-r*1.7);c.fill()}
+function arcEye(c,x,y,w,color,sad=false){c.strokeStyle=color;c.lineWidth=12;c.lineCap='round';c.beginPath();c.moveTo(x-w/2,y);c.quadraticCurveTo(x,y+(sad?22:-28),x+w/2,y);c.stroke()}
+function drawRich(c,mood,t,color){
+ const bounce=Math.sin(t*Math.PI*2)*2;
+ for(const [i,x] of [194,296].entries()){
+  if(mood==='love'){arcEye(c,x,83,58,color)}
+  if(mood==='cry'){arcEye(c,x,76,56,color,true);const phase=(t*.75+i*.43)%1;tear(c,x+(i?18:-18),116+phase*42,7+phase*2)}
+  if(mood==='blush'){rounded(c,x-29,62+bounce,58,53,19,color);rounded(c,x-25,129,50,12,6,'#ef96b1')}
+  if(mood==='stars'){rounded(c,x-35,53,70,83,21,color);star(c,x,94,24+Math.sin(t*4)*3,'#f2bb4b',Math.sin(t*2)*.14)}
+  if(mood==='angry'){rounded(c,x-32,61+bounce,64,68,17,color);c.fillStyle='#000';c.beginPath();c.moveTo(x-36,53+bounce);c.lineTo(x+36,53+bounce);c.lineTo(x+(i?-36:36),88+bounce);c.closePath();c.fill()}
+  if(mood==='dizzy'){c.strokeStyle=color;c.lineWidth=7;c.lineCap='round';c.beginPath();for(let j=0;j<70;j++){const a=j/69*Math.PI*4+t*1.9,r=3+j/69*33;c.lineTo(x+Math.cos(a)*r,94+Math.sin(a)*r)}c.stroke()}
+ }
+ if(mood==='love'){heart(c,245,137,22+Math.sin(t*5)*2,'#ff8fad');heart(c,142,60-Math.sin(t*2)*4,8,'#ffbdd0');heart(c,346,62+Math.sin(t*2)*4,8,'#ffbdd0')}
+ if(mood==='stars'){star(c,144,40,9,'#f2bb4b',t*.4);star(c,346,145,8,'#f2bb4b',-t*.4)}
+ if(mood==='angry'){c.strokeStyle='#f48c87';c.lineWidth=4;c.lineCap='round';c.beginPath();c.moveTo(339,34);c.lineTo(339,43);c.lineTo(331,43);c.moveTo(348,34);c.lineTo(348,43);c.lineTo(356,43);c.moveTo(339,60);c.lineTo(339,51);c.lineTo(331,51);c.moveTo(348,60);c.lineTo(348,51);c.lineTo(356,51);c.stroke()}
+}
+// Deterministic artwork export for the Vela PNG frame generator.
+window.robotArtwork={moods:moods.map(m=>m[0]),render(mood,t){
+ let c=document.querySelector('#asset');if(!c){c=document.createElement('canvas');c.id='asset';c.width=274;c.height=156;c.style.cssText='position:fixed;left:0;top:0;width:274px;height:156px;z-index:99999;background:black';document.body.append(c)}
+ const a=c.getContext('2d');a.setTransform(1,0,0,1,0,0);a.fillStyle='#000';a.fillRect(0,0,274,156);a.translate(-108,-18);
+ const pose=targetFor(mood,t,'soft');if(mood==='look')pose.dx=Math.sin(t*Math.PI)*13;
+ let blink=1;if(mood==='blink')blink=Math.max(.05,1-Math.pow(Math.max(0,Math.cos((t-.4)*Math.PI*2)),10));
+ eyePair(a,pose,'soft','#ffffff',blink,mood,t);
+ }};
+
+function text(c,str,x,y,size,color='#f4f4f4',align='center',weight=400){c.fillStyle=color;c.textAlign=align;c.textBaseline='middle';c.font=`${weight} ${size}px -apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif`;c.fillText(str,x,y)}
+function symbol(c,kind,x,y,color){c.strokeStyle=color;c.lineWidth=3.2;c.lineCap='round';c.lineJoin='round';c.beginPath();if(kind==='cross'){c.moveTo(x-7,y-7);c.lineTo(x+7,y+7);c.moveTo(x+7,y-7);c.lineTo(x-7,y+7)}else{c.moveTo(x-9,y);c.lineTo(x-2,y+7);c.lineTo(x+10,y-8)}c.stroke()}
+function paint(){
+ ctx.setTransform(2,0,0,2,0,0);ctx.clearRect(0,0,490,192);ctx.save();ctx.beginPath();ctx.roundRect(0,0,490,192,96);ctx.clip();ctx.fillStyle='#000';ctx.fillRect(0,0,490,192);
+ if(state.flipped){ctx.translate(490,192);ctx.rotate(Math.PI)}
+ const c=ctx,accent=state.color,now=new Date(),pad=n=>String(n).padStart(2,'0');
+ if(state.view==='eyes'){
+  let blink=1;const bt=state.time-state.blinkAt;if(bt>=0&&bt<.24)blink=1-.96*Math.sin(bt/.24*Math.PI);
+  if(state.mood==='blink'){const b=(state.time-state.moodTime)%2.4;if(b<.24)blink=1-.96*Math.sin(b/.24*Math.PI)}
+  eyePair(c,current,state.style,accent,blink,state.mood,state.paused?1.2:state.time-state.moodTime);
+ }else if(state.view==='clock'){
+  text(c,`${now.getMonth()+1}月${now.getDate()}日  周${'日一二三四五六'[now.getDay()]}`,245,43,20,'#bcbcbc');
+  text(c,`${pad(now.getHours())}:${pad(now.getMinutes())}`,245,99,66,accent,'center',500);
+  text(c,'24 小时制',245,153,18,'#a0a0a0');
+ }else if(state.view==='calendar'){
+  const monday=new Date(now.getFullYear(),now.getMonth(),now.getDate()-(now.getDay()+6)%7);
+  const sunday=new Date(monday.getFullYear(),monday.getMonth(),monday.getDate()+6);
+  text(c,`${monday.getMonth()+1}月${monday.getDate()}日 — ${sunday.getMonth()+1}月${sunday.getDate()}日`,245,33,20,'#bcbcbc');
+  '一二三四五六日'.split('').forEach((day,i)=>{const x=131+i*38,d=new Date(monday.getFullYear(),monday.getMonth(),monday.getDate()+i),today=d.toDateString()===now.toDateString();text(c,day,x,72,20,'#bcbcbc');if(today)rounded(c,x-18,94,36,43,12,accent);text(c,String(d.getDate()),x,117,25,today?'#171717':'#f4f4f4','center',500)});
+  text(c,`今天 ${now.getMonth()+1}月${now.getDate()}日`,245,161,18,accent);
+ }else if(state.view==='settings'){
+  text(c,'桌搭设置',245,43,24);controls.forEach(([id,x,y,w,h])=>{rounded(c,x,y,w,h,16,'#202020');if(id==='keep'){text(c,'常亮',x+w/2,y+21,21,accent);text(c,['关','30 分','2 小时'][state.keep],x+w/2,y+47,18,'#c8c8c8')}if(id==='flip'){text(c,'翻转',x+w/2,y+21,21);text(c,'180°',x+w/2,y+47,18,'#c8c8c8')}if(id==='exit'){text(c,'退出',x+w/2,y+21,21,'#e7ad97');text(c,'需确认',x+w/2,y+47,18,'#c8c8c8')}});
+  text(c,'下滑返回',245,165,17,'#aaaaaa');
+ }else if(state.view==='confirm'){
+  text(c,'退出桌搭？',245,42,25);text(c,'结束常亮，返回手环',245,74,18,'#bcbcbc');
+  rounded(c,108,101,132,58,25,'#262626');rounded(c,250,101,132,58,25,accent);symbol(c,'cross',174,130,'#eeeeee');symbol(c,'tick',316,130,'#171717');
+ }else{text(c,'已退出 · 预览示意',245,80,23,accent);text(c,'点击屏幕重新打开',245,118,16,'#a0afa6')}
+ if(state.safe){c.fillStyle='#70f0dc0b';c.fillRect(108,18,274,156);c.strokeStyle='#d8eae879';c.lineWidth=1;c.setLineDash([4,4]);c.strokeRect(108,18,274,156);c.setLineDash([])}
+ ctx.restore();
+}
+function setMood(id,manual=false){state.mood=id;state.moodTime=state.time;state.nextMood=state.time+(id==='idle'?8:4.5);if(manual){state.random=false;q('#random').checked=false;setView('eyes')}q('#mood-label').textContent=moods.find(m=>m[0]===id)[1];qa('.expression').forEach(b=>b.setAttribute('aria-pressed',b.dataset.mood===id));if(state.paused)Object.assign(current,targetFor(id,1.2,state.style));paint()}
+function setView(view){if(['eyes','clock','calendar'].includes(view))state.lastView=view;state.view=view;qa('[data-view]').forEach(b=>b.setAttribute('aria-pressed',b.dataset.view===view));q('#view-label').textContent={eyes:'眼睛首页 · '+(state.random?'随机待机':'动作预览'),clock:'时钟桌面',calendar:'日历桌面 · 本周七天',settings:'上滑设置',confirm:'退出确认',exited:'结束状态 · 仅示意'}[view];paint()}
+function rebuildThumbs(){qa('.expression').forEach(b=>{const c=b.querySelector('canvas').getContext('2d');c.fillStyle='#000';c.fillRect(0,0,490,192);const m=b.dataset.mood,p=targetFor(m,1.2,state.style);eyePair(c,p,state.style,state.color,m==='blink'?.07:1,m)})}
+moods.forEach(([id,label,desc])=>{const b=document.createElement('button');b.className='expression';b.dataset.mood=id;b.setAttribute('aria-pressed',id==='idle');b.innerHTML=`<canvas width="490" height="192" aria-hidden="true"></canvas><span class="label">${label}<span aria-hidden="true">↗</span></span><small>${desc}</small>`;b.onclick=()=>setMood(id,true);q('#expressions').append(b)});
+qa('[data-style]').forEach(b=>b.onclick=()=>{state.style=b.dataset.style;if(state.paused)Object.assign(current,targetFor(state.mood,1.2,state.style));qa('[data-style]').forEach(x=>x.setAttribute('aria-pressed',x===b));rebuildThumbs();paint()});
+qa('[data-color]').forEach(b=>b.onclick=()=>{state.color=b.dataset.color;qa('[data-color]').forEach(x=>x.setAttribute('aria-pressed',x===b));rebuildThumbs();paint()});
+qa('[data-view]').forEach(b=>b.onclick=()=>setView(b.dataset.view));
+q('#random').onchange=e=>{state.random=e.target.checked;state.nextMood=state.time+3;setView('eyes')};q('#safe').onchange=e=>{state.safe=e.target.checked;paint()};q('#pause').checked=state.paused;q('#pause').onchange=e=>{state.paused=e.target.checked;if(state.paused)Object.assign(current,targetFor(state.mood,1.2,state.style));paint()};
+function navigate(direction){if(direction==='up'){setView('settings');return}if(direction==='down'){setView(state.lastView);return}if(!['eyes','clock','calendar'].includes(state.view))return;const modes=['eyes','clock','calendar'],i=modes.indexOf(state.view);setView(modes[(i+(direction==='left'?1:2))%3])}
+function tap(x,y){if(state.view==='eyes'){setMood('happy');state.nextMood=state.time+2;q('#announce').textContent='轻点回应：开心一下，然后继续待机'}else if(state.view==='settings'){const hit=controls.find(([,a,b,w,h])=>x>=a&&x<=a+w&&y>=b&&y<=b+h);if(!hit)return;if(hit[0]==='keep'){state.keep=(state.keep+1)%3;q('#announce').textContent='常亮 '+['关闭','30 分钟','2 小时'][state.keep]+'（仅预览）'}if(hit[0]==='flip'){state.flipped=!state.flipped;q('#announce').textContent=state.flipped?'已翻转 180°，触控区域随画面转换':'已恢复默认方向'}if(hit[0]==='exit')setView('confirm')}else if(state.view==='confirm'&&y>=101&&y<=159){if(x>=108&&x<=240)setView('settings');else if(x>=250&&x<=382){state.keep=0;setView('exited')}}else if(state.view==='exited'){state.flipped=false;setView('eyes')}paint()}
+let pointer=null;
+function coords(e){const r=canvas.getBoundingClientRect();let x=(e.clientX-r.left)*490/r.width,y=(e.clientY-r.top)*192/r.height;return state.flipped?[490-x,192-y]:[x,y]}
+canvas.onpointerdown=e=>{canvas.setPointerCapture(e.pointerId);pointer={start:coords(e),max:0}};
+canvas.onpointermove=e=>{if(pointer){const p=coords(e);pointer.max=Math.max(pointer.max,Math.abs(p[0]-pointer.start[0]),Math.abs(p[1]-pointer.start[1]))}};
+canvas.onpointerup=e=>{if(!pointer)return;const start=pointer.start,end=coords(e),max=pointer.max;pointer=null;const dx=end[0]-start[0],dy=end[1]-start[1];if(Math.max(Math.abs(dx),Math.abs(dy))>=28){navigate(Math.abs(dx)>Math.abs(dy)?dx>0?'right':'left':dy>0?'down':'up')}else if(max<12)tap(...end)};
+canvas.onpointercancel=()=>{pointer=null};canvas.onlostpointercapture=()=>{pointer=null};
+canvas.onkeydown=e=>{const dirs={ArrowLeft:'left',ArrowRight:'right',ArrowUp:'up',ArrowDown:'down'};if(dirs[e.key]){e.preventDefault();navigate(dirs[e.key])}if(e.key===' '){e.preventDefault();tap(245,96)}};
+let last=performance.now(),lastPaint=0;
+function loop(now){const dt=Math.min(.033,(now-last)/1000);last=now;if(!document.hidden&&!state.paused&&state.view==='eyes'){
+ state.time+=dt;if(state.time>state.blinkAt+.24)state.blinkAt=state.time+3+Math.random()*4;
+ if(state.time>state.nextMood){if(state.random){const bag=['idle','idle','idle','look','look','happy','curious','surprise','sleepy','wink','love','cry','blush','stars','angry','dizzy'].filter(x=>x!==state.mood);setMood(bag[Math.floor(Math.random()*bag.length)])}else if(state.mood==='happy'&&state.nextMood-state.moodTime<3)setMood('idle')}
+ const p=targetFor(state.mood,state.time-state.moodTime,state.style);Object.keys(p).forEach(k=>{const v=spring(current[k],velocity[k]||0,p[k],dt);current[k]=v[0];velocity[k]=v[1]});
+ }if(!document.hidden&&now-lastPaint>32){paint();lastPaint=now}requestAnimationFrame(loop)}
+rebuildThumbs();setView('eyes');paint();requestAnimationFrame(loop);
+</script></body></html>

@@ -1,0 +1,5594 @@
+{
+  "forward/open.png": [
+    96,
+    96
+  ],
+  "reverse/open.png": [
+    96,
+    96
+  ],
+  "forward/closed.png": [
+    96,
+    96
+  ],
+  "reverse/closed.png": [
+    96,
+    96
+  ],
+  "forward/smile.png": [
+    96,
+    96
+  ],
+  "reverse/smile.png": [
+    96,
+    96
+  ],
+  "forward/sad.png": [
+    96,
+    96
+  ],
+  "reverse/sad.png": [
+    96,
+    96
+  ],
+  "forward/angry.png": [
+    96,
+    96
+  ],
+  "reverse/angry.png": [
+    96,
+    96
+  ],
+  "forward/angry-right.png": [
+    96,
+    96
+  ],
+  "reverse/angry-right.png": [
+    96,
+    96
+  ],
+  "forward/spiral.png": [
+    96,
+    96
+  ],
+  "reverse/spiral.png": [
+    96,
+    96
+  ],
+  "forward/heart.png": [
+    96,
+    96
+  ],
+  "reverse/heart.png": [
+    96,
+    96
+  ],
+  "forward/tear.png": [
+    96,
+    96
+  ],
+  "reverse/tear.png": [
+    96,
+    96
+  ],
+  "forward/star-eye.png": [
+    96,
+    96
+  ],
+  "reverse/star-eye.png": [
+    96,
+    96
+  ],
+  "forward/spark.png": [
+    96,
+    96
+  ],
+  "reverse/spark.png": [
+    96,
+    96
+  ],
+  "forward/blush.png": [
+    96,
+    96
+  ],
+  "reverse/blush.png": [
+    96,
+    96
+  ],
+  "forward/anger.png": [
+    96,
+    96
+  ],
+  "reverse/anger.png": [
+    96,
+    96
+  ],
+  "forward/cancel.png": [
+    192,
+    92
+  ],
+  "reverse/cancel.png": [
+    192,
+    92
+  ],
+  "forward/confirm.png": [
+    192,
+    92
+  ],
+  "reverse/confirm.png": [
+    192,
+    92
+  ],
+  "forward/caret.png": [
+    96,
+    96
+  ],
+  "reverse/caret.png": [
+    96,
+    96
+  ],
+  "forward/round-eye.png": [
+    96,
+    96
+  ],
+  "reverse/round-eye.png": [
+    96,
+    96
+  ],
+  "forward/flat-eye.png": [
+    96,
+    96
+  ],
+  "reverse/flat-eye.png": [
+    96,
+    96
+  ],
+  "forward/plead-eye.png": [
+    96,
+    96
+  ],
+  "reverse/plead-eye.png": [
+    96,
+    96
+  ],
+  "forward/cross-eye.png": [
+    96,
+    96
+  ],
+  "reverse/cross-eye.png": [
+    96,
+    96
+  ],
+  "forward/u-eye.png": [
+    96,
+    96
+  ],
+  "reverse/u-eye.png": [
+    96,
+    96
+  ],
+  "forward/squeeze-left.png": [
+    96,
+    96
+  ],
+  "reverse/squeeze-left.png": [
+    96,
+    96
+  ],
+  "forward/squeeze-right.png": [
+    96,
+    96
+  ],
+  "reverse/squeeze-right.png": [
+    96,
+    96
+  ],
+  "forward/hand-ok.png": [
+    96,
+    96
+  ],
+  "reverse/hand-ok.png": [
+    96,
+    96
+  ],
+  "forward/hand-like.png": [
+    96,
+    96
+  ],
+  "reverse/hand-like.png": [
+    96,
+    96
+  ],
+  "forward/hand-wave.png": [
+    96,
+    96
+  ],
+  "reverse/hand-wave.png": [
+    96,
+    96
+  ],
+  "forward/hand-peace.png": [
+    96,
+    96
+  ],
+  "reverse/hand-peace.png": [
+    96,
+    96
+  ],
+  "forward/time-30.png": [
+    114,
+    60
+  ],
+  "reverse/time-30.png": [
+    114,
+    60
+  ],
+  "forward/time-31.png": [
+    114,
+    60
+  ],
+  "reverse/time-31.png": [
+    114,
+    60
+  ],
+  "forward/time-32.png": [
+    114,
+    60
+  ],
+  "reverse/time-32.png": [
+    114,
+    60
+  ],
+  "forward/time-33.png": [
+    114,
+    60
+  ],
+  "reverse/time-33.png": [
+    114,
+    60
+  ],
+  "forward/time-34.png": [
+    114,
+    60
+  ],
+  "reverse/time-34.png": [
+    114,
+    60
+  ],
+  "forward/time-35.png": [
+    114,
+    60
+  ],
+  "reverse/time-35.png": [
+    114,
+    60
+  ],
+  "forward/time-36.png": [
+    114,
+    60
+  ],
+  "reverse/time-36.png": [
+    114,
+    60
+  ],
+  "forward/time-37.png": [
+    114,
+    60
+  ],
+  "reverse/time-37.png": [
+    114,
+    60
+  ],
+  "forward/time-38.png": [
+    114,
+    60
+  ],
+  "reverse/time-38.png": [
+    114,
+    60
+  ],
+  "forward/time-39.png": [
+    114,
+    60
+  ],
+  "reverse/time-39.png": [
+    114,
+    60
+  ],
+  "forward/time-3a.png": [
+    114,
+    30
+  ],
+  "reverse/time-3a.png": [
+    114,
+    30
+  ],
+  "forward/heading-30.png": [
+    38,
+    17
+  ],
+  "reverse/heading-30.png": [
+    38,
+    17
+  ],
+  "forward/heading-31.png": [
+    38,
+    17
+  ],
+  "reverse/heading-31.png": [
+    38,
+    17
+  ],
+  "forward/heading-32.png": [
+    38,
+    17
+  ],
+  "reverse/heading-32.png": [
+    38,
+    17
+  ],
+  "forward/heading-33.png": [
+    38,
+    17
+  ],
+  "reverse/heading-33.png": [
+    38,
+    17
+  ],
+  "forward/heading-34.png": [
+    38,
+    17
+  ],
+  "reverse/heading-34.png": [
+    38,
+    17
+  ],
+  "forward/heading-35.png": [
+    38,
+    17
+  ],
+  "reverse/heading-35.png": [
+    38,
+    17
+  ],
+  "forward/heading-36.png": [
+    38,
+    17
+  ],
+  "reverse/heading-36.png": [
+    38,
+    17
+  ],
+  "forward/heading-37.png": [
+    38,
+    17
+  ],
+  "reverse/heading-37.png": [
+    38,
+    17
+  ],
+  "forward/heading-38.png": [
+    38,
+    17
+  ],
+  "reverse/heading-38.png": [
+    38,
+    17
+  ],
+  "forward/heading-39.png": [
+    38,
+    17
+  ],
+  "reverse/heading-39.png": [
+    38,
+    17
+  ],
+  "forward/heading-6708.png": [
+    38,
+    28
+  ],
+  "reverse/heading-6708.png": [
+    38,
+    28
+  ],
+  "forward/heading-65e5.png": [
+    38,
+    28
+  ],
+  "reverse/heading-65e5.png": [
+    38,
+    28
+  ],
+  "forward/heading-5468.png": [
+    38,
+    28
+  ],
+  "reverse/heading-5468.png": [
+    38,
+    28
+  ],
+  "forward/heading-4e00.png": [
+    38,
+    28
+  ],
+  "reverse/heading-4e00.png": [
+    38,
+    28
+  ],
+  "forward/heading-4e8c.png": [
+    38,
+    28
+  ],
+  "reverse/heading-4e8c.png": [
+    38,
+    28
+  ],
+  "forward/heading-4e09.png": [
+    38,
+    28
+  ],
+  "reverse/heading-4e09.png": [
+    38,
+    28
+  ],
+  "forward/heading-56db.png": [
+    38,
+    28
+  ],
+  "reverse/heading-56db.png": [
+    38,
+    28
+  ],
+  "forward/heading-4e94.png": [
+    38,
+    28
+  ],
+  "reverse/heading-4e94.png": [
+    38,
+    28
+  ],
+  "forward/heading-516d.png": [
+    38,
+    28
+  ],
+  "reverse/heading-516d.png": [
+    38,
+    28
+  ],
+  "forward/heading-20.png": [
+    38,
+    10
+  ],
+  "reverse/heading-20.png": [
+    38,
+    10
+  ],
+  "forward/heading-2014.png": [
+    38,
+    28
+  ],
+  "reverse/heading-2014.png": [
+    38,
+    28
+  ],
+  "forward/weekday-4e00.png": [
+    38,
+    26
+  ],
+  "reverse/weekday-4e00.png": [
+    38,
+    26
+  ],
+  "forward/weekday-4e8c.png": [
+    38,
+    26
+  ],
+  "reverse/weekday-4e8c.png": [
+    38,
+    26
+  ],
+  "forward/weekday-4e09.png": [
+    38,
+    26
+  ],
+  "reverse/weekday-4e09.png": [
+    38,
+    26
+  ],
+  "forward/weekday-56db.png": [
+    38,
+    26
+  ],
+  "reverse/weekday-56db.png": [
+    38,
+    26
+  ],
+  "forward/weekday-4e94.png": [
+    38,
+    26
+  ],
+  "reverse/weekday-4e94.png": [
+    38,
+    26
+  ],
+  "forward/weekday-516d.png": [
+    38,
+    26
+  ],
+  "reverse/weekday-516d.png": [
+    38,
+    26
+  ],
+  "forward/weekday-65e5.png": [
+    38,
+    26
+  ],
+  "reverse/weekday-65e5.png": [
+    38,
+    26
+  ],
+  "forward/weekday-4f11.png": [
+    38,
+    26
+  ],
+  "reverse/weekday-4f11.png": [
+    38,
+    26
+  ],
+  "forward/weekday-73ed.png": [
+    38,
+    26
+  ],
+  "reverse/weekday-73ed.png": [
+    38,
+    26
+  ],
+  "forward/weekend-4e00.png": [
+    38,
+    26
+  ],
+  "reverse/weekend-4e00.png": [
+    38,
+    26
+  ],
+  "forward/weekend-4e8c.png": [
+    38,
+    26
+  ],
+  "reverse/weekend-4e8c.png": [
+    38,
+    26
+  ],
+  "forward/weekend-4e09.png": [
+    38,
+    26
+  ],
+  "reverse/weekend-4e09.png": [
+    38,
+    26
+  ],
+  "forward/weekend-56db.png": [
+    38,
+    26
+  ],
+  "reverse/weekend-56db.png": [
+    38,
+    26
+  ],
+  "forward/weekend-4e94.png": [
+    38,
+    26
+  ],
+  "reverse/weekend-4e94.png": [
+    38,
+    26
+  ],
+  "forward/weekend-516d.png": [
+    38,
+    26
+  ],
+  "reverse/weekend-516d.png": [
+    38,
+    26
+  ],
+  "forward/weekend-65e5.png": [
+    38,
+    26
+  ],
+  "reverse/weekend-65e5.png": [
+    38,
+    26
+  ],
+  "forward/weekend-4f11.png": [
+    38,
+    26
+  ],
+  "reverse/weekend-4f11.png": [
+    38,
+    26
+  ],
+  "forward/weekend-73ed.png": [
+    38,
+    26
+  ],
+  "reverse/weekend-73ed.png": [
+    38,
+    26
+  ],
+  "forward/holiday-5143.png": [
+    32,
+    24
+  ],
+  "reverse/holiday-5143.png": [
+    32,
+    24
+  ],
+  "forward/holiday-65e6.png": [
+    32,
+    24
+  ],
+  "reverse/holiday-65e6.png": [
+    32,
+    24
+  ],
+  "forward/holiday-9664.png": [
+    32,
+    24
+  ],
+  "reverse/holiday-9664.png": [
+    32,
+    24
+  ],
+  "forward/holiday-5915.png": [
+    32,
+    24
+  ],
+  "reverse/holiday-5915.png": [
+    32,
+    24
+  ],
+  "forward/holiday-6625.png": [
+    32,
+    24
+  ],
+  "reverse/holiday-6625.png": [
+    32,
+    24
+  ],
+  "forward/holiday-8282.png": [
+    32,
+    24
+  ],
+  "reverse/holiday-8282.png": [
+    32,
+    24
+  ],
+  "forward/holiday-6e05.png": [
+    32,
+    24
+  ],
+  "reverse/holiday-6e05.png": [
+    32,
+    24
+  ],
+  "forward/holiday-660e.png": [
+    32,
+    24
+  ],
+  "reverse/holiday-660e.png": [
+    32,
+    24
+  ],
+  "forward/holiday-52b3.png": [
+    32,
+    24
+  ],
+  "reverse/holiday-52b3.png": [
+    32,
+    24
+  ],
+  "forward/holiday-52a8.png": [
+    32,
+    24
+  ],
+  "reverse/holiday-52a8.png": [
+    32,
+    24
+  ],
+  "forward/holiday-7aef.png": [
+    32,
+    24
+  ],
+  "reverse/holiday-7aef.png": [
+    32,
+    24
+  ],
+  "forward/holiday-5348.png": [
+    32,
+    24
+  ],
+  "reverse/holiday-5348.png": [
+    32,
+    24
+  ],
+  "forward/holiday-4e2d.png": [
+    32,
+    24
+  ],
+  "reverse/holiday-4e2d.png": [
+    32,
+    24
+  ],
+  "forward/holiday-79cb.png": [
+    32,
+    24
+  ],
+  "reverse/holiday-79cb.png": [
+    32,
+    24
+  ],
+  "forward/holiday-56fd.png": [
+    32,
+    24
+  ],
+  "reverse/holiday-56fd.png": [
+    32,
+    24
+  ],
+  "forward/holiday-5e86.png": [
+    32,
+    24
+  ],
+  "reverse/holiday-5e86.png": [
+    32,
+    24
+  ],
+  "forward/holiday-4f11.png": [
+    32,
+    24
+  ],
+  "reverse/holiday-4f11.png": [
+    32,
+    24
+  ],
+  "forward/holiday-73ed.png": [
+    32,
+    24
+  ],
+  "reverse/holiday-73ed.png": [
+    32,
+    24
+  ],
+  "forward/workday-73ed.png": [
+    32,
+    24
+  ],
+  "reverse/workday-73ed.png": [
+    32,
+    24
+  ],
+  "forward/day-30.png": [
+    53,
+    22
+  ],
+  "reverse/day-30.png": [
+    53,
+    22
+  ],
+  "forward/day-31.png": [
+    53,
+    22
+  ],
+  "reverse/day-31.png": [
+    53,
+    22
+  ],
+  "forward/day-32.png": [
+    53,
+    22
+  ],
+  "reverse/day-32.png": [
+    53,
+    22
+  ],
+  "forward/day-33.png": [
+    53,
+    22
+  ],
+  "reverse/day-33.png": [
+    53,
+    22
+  ],
+  "forward/day-34.png": [
+    53,
+    22
+  ],
+  "reverse/day-34.png": [
+    53,
+    22
+  ],
+  "forward/day-35.png": [
+    53,
+    22
+  ],
+  "reverse/day-35.png": [
+    53,
+    22
+  ],
+  "forward/day-36.png": [
+    53,
+    22
+  ],
+  "reverse/day-36.png": [
+    53,
+    22
+  ],
+  "forward/day-37.png": [
+    53,
+    22
+  ],
+  "reverse/day-37.png": [
+    53,
+    22
+  ],
+  "forward/day-38.png": [
+    53,
+    22
+  ],
+  "reverse/day-38.png": [
+    53,
+    22
+  ],
+  "forward/day-39.png": [
+    53,
+    22
+  ],
+  "reverse/day-39.png": [
+    53,
+    22
+  ],
+  "forward/today-30.png": [
+    53,
+    22
+  ],
+  "reverse/today-30.png": [
+    53,
+    22
+  ],
+  "forward/today-31.png": [
+    53,
+    22
+  ],
+  "reverse/today-31.png": [
+    53,
+    22
+  ],
+  "forward/today-32.png": [
+    53,
+    22
+  ],
+  "reverse/today-32.png": [
+    53,
+    22
+  ],
+  "forward/today-33.png": [
+    53,
+    22
+  ],
+  "reverse/today-33.png": [
+    53,
+    22
+  ],
+  "forward/today-34.png": [
+    53,
+    22
+  ],
+  "reverse/today-34.png": [
+    53,
+    22
+  ],
+  "forward/today-35.png": [
+    53,
+    22
+  ],
+  "reverse/today-35.png": [
+    53,
+    22
+  ],
+  "forward/today-36.png": [
+    53,
+    22
+  ],
+  "reverse/today-36.png": [
+    53,
+    22
+  ],
+  "forward/today-37.png": [
+    53,
+    22
+  ],
+  "reverse/today-37.png": [
+    53,
+    22
+  ],
+  "forward/today-38.png": [
+    53,
+    22
+  ],
+  "reverse/today-38.png": [
+    53,
+    22
+  ],
+  "forward/today-39.png": [
+    53,
+    22
+  ],
+  "reverse/today-39.png": [
+    53,
+    22
+  ],
+  "forward/confirmText.png": [
+    58,
+    290
+  ],
+  "reverse/confirmText.png": [
+    58,
+    290
+  ],
+  "forward/settings-v091.png": [
+    192,
+    490
+  ],
+  "reverse/settings-v091.png": [
+    192,
+    490
+  ],
+  "forward/codex-v082-plan-43-68-61-74-47-50-54.png": [
+    38,
+    196
+  ],
+  "reverse/codex-v082-plan-43-68-61-74-47-50-54.png": [
+    38,
+    196
+  ],
+  "forward/codex-v082-plan-46-72-65-65.png": [
+    38,
+    196
+  ],
+  "reverse/codex-v082-plan-46-72-65-65.png": [
+    38,
+    196
+  ],
+  "forward/codex-v082-plan-47-6f.png": [
+    38,
+    196
+  ],
+  "reverse/codex-v082-plan-47-6f.png": [
+    38,
+    196
+  ],
+  "forward/codex-v082-plan-50-6c-75-73.png": [
+    38,
+    196
+  ],
+  "reverse/codex-v082-plan-50-6c-75-73.png": [
+    38,
+    196
+  ],
+  "forward/codex-v082-plan-50-72-6f-20-32-30-d7.png": [
+    38,
+    196
+  ],
+  "reverse/codex-v082-plan-50-72-6f-20-32-30-d7.png": [
+    38,
+    196
+  ],
+  "forward/codex-v082-plan-50-72-6f-20-35-d7.png": [
+    38,
+    196
+  ],
+  "reverse/codex-v082-plan-50-72-6f-20-35-d7.png": [
+    38,
+    196
+  ],
+  "forward/codex-v082-plan-42-75-73-69-6e-65-73-73.png": [
+    38,
+    196
+  ],
+  "reverse/codex-v082-plan-42-75-73-69-6e-65-73-73.png": [
+    38,
+    196
+  ],
+  "forward/codex-v082-plan-42-75-73-69-6e-65-73-73-20-35-d7.png": [
+    38,
+    196
+  ],
+  "reverse/codex-v082-plan-42-75-73-69-6e-65-73-73-20-35-d7.png": [
+    38,
+    196
+  ],
+  "forward/codex-v082-plan-45-6e-74-65-72-70-72-69-73-65.png": [
+    38,
+    196
+  ],
+  "reverse/codex-v082-plan-45-6e-74-65-72-70-72-69-73-65.png": [
+    38,
+    196
+  ],
+  "forward/codex-v082-plan-45-64-75.png": [
+    38,
+    196
+  ],
+  "reverse/codex-v082-plan-45-64-75.png": [
+    38,
+    196
+  ],
+  "forward/codex-v082-plan-45-64-75-20-50-6c-75-73.png": [
+    38,
+    196
+  ],
+  "reverse/codex-v082-plan-45-64-75-20-50-6c-75-73.png": [
+    38,
+    196
+  ],
+  "forward/codex-v082-plan-45-64-75-20-50-72-6f.png": [
+    38,
+    196
+  ],
+  "reverse/codex-v082-plan-45-64-75-20-50-72-6f.png": [
+    38,
+    196
+  ],
+  "forward/codex-v082-window-672c-5468-5269-4f59.png": [
+    30,
+    124
+  ],
+  "reverse/codex-v082-window-672c-5468-5269-4f59.png": [
+    30,
+    124
+  ],
+  "forward/codex-v082-window-77ed-65f6-5269-4f59.png": [
+    30,
+    124
+  ],
+  "reverse/codex-v082-window-77ed-65f6-5269-4f59.png": [
+    30,
+    124
+  ],
+  "forward/codex-v082-window-31-5c0f-65f6-5269-4f59.png": [
+    30,
+    124
+  ],
+  "reverse/codex-v082-window-31-5c0f-65f6-5269-4f59.png": [
+    30,
+    124
+  ],
+  "forward/codex-v082-window-32-5c0f-65f6-5269-4f59.png": [
+    30,
+    124
+  ],
+  "reverse/codex-v082-window-32-5c0f-65f6-5269-4f59.png": [
+    30,
+    124
+  ],
+  "forward/codex-v082-window-33-5c0f-65f6-5269-4f59.png": [
+    30,
+    124
+  ],
+  "reverse/codex-v082-window-33-5c0f-65f6-5269-4f59.png": [
+    30,
+    124
+  ],
+  "forward/codex-v082-window-34-5c0f-65f6-5269-4f59.png": [
+    30,
+    124
+  ],
+  "reverse/codex-v082-window-34-5c0f-65f6-5269-4f59.png": [
+    30,
+    124
+  ],
+  "forward/codex-v082-window-35-5c0f-65f6-5269-4f59.png": [
+    30,
+    124
+  ],
+  "reverse/codex-v082-window-35-5c0f-65f6-5269-4f59.png": [
+    30,
+    124
+  ],
+  "forward/codex-v082-window-36-5c0f-65f6-5269-4f59.png": [
+    30,
+    124
+  ],
+  "reverse/codex-v082-window-36-5c0f-65f6-5269-4f59.png": [
+    30,
+    124
+  ],
+  "forward/codex-v082-window-37-5c0f-65f6-5269-4f59.png": [
+    30,
+    124
+  ],
+  "reverse/codex-v082-window-37-5c0f-65f6-5269-4f59.png": [
+    30,
+    124
+  ],
+  "forward/codex-v082-window-38-5c0f-65f6-5269-4f59.png": [
+    30,
+    124
+  ],
+  "reverse/codex-v082-window-38-5c0f-65f6-5269-4f59.png": [
+    30,
+    124
+  ],
+  "forward/codex-v082-window-39-5c0f-65f6-5269-4f59.png": [
+    30,
+    124
+  ],
+  "reverse/codex-v082-window-39-5c0f-65f6-5269-4f59.png": [
+    30,
+    124
+  ],
+  "forward/codex-v082-window-31-30-5c0f-65f6-5269-4f59.png": [
+    30,
+    124
+  ],
+  "reverse/codex-v082-window-31-30-5c0f-65f6-5269-4f59.png": [
+    30,
+    124
+  ],
+  "forward/codex-v082-window-31-31-5c0f-65f6-5269-4f59.png": [
+    30,
+    124
+  ],
+  "reverse/codex-v082-window-31-31-5c0f-65f6-5269-4f59.png": [
+    30,
+    124
+  ],
+  "forward/codex-v082-window-31-32-5c0f-65f6-5269-4f59.png": [
+    30,
+    124
+  ],
+  "reverse/codex-v082-window-31-32-5c0f-65f6-5269-4f59.png": [
+    30,
+    124
+  ],
+  "forward/codex-v082-window-31-33-5c0f-65f6-5269-4f59.png": [
+    30,
+    124
+  ],
+  "reverse/codex-v082-window-31-33-5c0f-65f6-5269-4f59.png": [
+    30,
+    124
+  ],
+  "forward/codex-v082-window-31-34-5c0f-65f6-5269-4f59.png": [
+    30,
+    124
+  ],
+  "reverse/codex-v082-window-31-34-5c0f-65f6-5269-4f59.png": [
+    30,
+    124
+  ],
+  "forward/codex-v082-window-31-35-5c0f-65f6-5269-4f59.png": [
+    30,
+    124
+  ],
+  "reverse/codex-v082-window-31-35-5c0f-65f6-5269-4f59.png": [
+    30,
+    124
+  ],
+  "forward/codex-v082-window-31-36-5c0f-65f6-5269-4f59.png": [
+    30,
+    124
+  ],
+  "reverse/codex-v082-window-31-36-5c0f-65f6-5269-4f59.png": [
+    30,
+    124
+  ],
+  "forward/codex-v082-window-31-37-5c0f-65f6-5269-4f59.png": [
+    30,
+    124
+  ],
+  "reverse/codex-v082-window-31-37-5c0f-65f6-5269-4f59.png": [
+    30,
+    124
+  ],
+  "forward/codex-v082-window-31-38-5c0f-65f6-5269-4f59.png": [
+    30,
+    124
+  ],
+  "reverse/codex-v082-window-31-38-5c0f-65f6-5269-4f59.png": [
+    30,
+    124
+  ],
+  "forward/codex-v082-window-31-39-5c0f-65f6-5269-4f59.png": [
+    30,
+    124
+  ],
+  "reverse/codex-v082-window-31-39-5c0f-65f6-5269-4f59.png": [
+    30,
+    124
+  ],
+  "forward/codex-v082-window-32-30-5c0f-65f6-5269-4f59.png": [
+    30,
+    124
+  ],
+  "reverse/codex-v082-window-32-30-5c0f-65f6-5269-4f59.png": [
+    30,
+    124
+  ],
+  "forward/codex-v082-window-32-31-5c0f-65f6-5269-4f59.png": [
+    30,
+    124
+  ],
+  "reverse/codex-v082-window-32-31-5c0f-65f6-5269-4f59.png": [
+    30,
+    124
+  ],
+  "forward/codex-v082-window-32-32-5c0f-65f6-5269-4f59.png": [
+    30,
+    124
+  ],
+  "reverse/codex-v082-window-32-32-5c0f-65f6-5269-4f59.png": [
+    30,
+    124
+  ],
+  "forward/codex-v082-window-32-33-5c0f-65f6-5269-4f59.png": [
+    30,
+    124
+  ],
+  "reverse/codex-v082-window-32-33-5c0f-65f6-5269-4f59.png": [
+    30,
+    124
+  ],
+  "forward/codex-v082-window-32-34-5c0f-65f6-5269-4f59.png": [
+    30,
+    124
+  ],
+  "reverse/codex-v082-window-32-34-5c0f-65f6-5269-4f59.png": [
+    30,
+    124
+  ],
+  "forward/codex-v082-reset-7b49-5f85-66f4-65b0.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-7b49-5f85-66f4-65b0.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-31-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-31-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-32-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-32-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-33-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-33-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-34-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-34-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-35-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-35-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-36-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-36-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-37-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-37-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-38-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-38-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-39-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-39-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-31-30-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-31-30-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-31-31-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-31-31-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-31-32-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-31-32-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-31-33-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-31-33-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-31-34-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-31-34-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-31-35-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-31-35-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-31-36-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-31-36-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-31-37-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-31-37-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-31-38-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-31-38-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-31-39-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-31-39-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-32-30-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-32-30-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-32-31-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-32-31-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-32-32-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-32-32-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-32-33-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-32-33-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-32-34-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-32-34-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-32-35-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-32-35-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-32-36-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-32-36-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-32-37-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-32-37-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-32-38-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-32-38-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-32-39-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-32-39-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-33-30-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-33-30-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-33-31-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-33-31-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-33-32-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-33-32-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-33-33-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-33-33-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-33-34-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-33-34-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-33-35-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-33-35-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-33-36-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-33-36-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-33-37-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-33-37-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-33-38-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-33-38-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-33-39-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-33-39-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-34-30-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-34-30-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-34-31-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-34-31-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-34-32-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-34-32-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-34-33-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-34-33-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-34-34-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-34-34-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-34-35-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-34-35-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-34-36-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-34-36-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-34-37-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-34-37-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-34-38-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-34-38-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-34-39-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-34-39-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-35-30-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-35-30-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-35-31-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-35-31-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-35-32-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-35-32-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-35-33-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-35-33-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-35-34-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-35-34-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-35-35-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-35-35-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-35-36-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-35-36-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-35-37-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-35-37-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-35-38-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-35-38-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-35-39-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-35-39-5206-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-31-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-31-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-32-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-32-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-33-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-33-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-34-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-34-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-35-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-35-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-36-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-36-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-37-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-37-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-38-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-38-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-39-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-39-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-31-30-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-31-30-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-31-31-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-31-31-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-31-32-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-31-32-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-31-33-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-31-33-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-31-34-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-31-34-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-31-35-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-31-35-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-31-36-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-31-36-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-31-37-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-31-37-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-31-38-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-31-38-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-31-39-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-31-39-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-32-30-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-32-30-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-32-31-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-32-31-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-32-32-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-32-32-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-32-33-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-32-33-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-31-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-31-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-31-5929-31-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-31-5929-31-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-31-5929-32-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-31-5929-32-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-31-5929-33-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-31-5929-33-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-31-5929-34-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-31-5929-34-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-31-5929-35-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-31-5929-35-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-31-5929-36-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-31-5929-36-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-31-5929-37-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-31-5929-37-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-31-5929-38-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-31-5929-38-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-31-5929-39-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-31-5929-39-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-31-5929-31-30-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-31-5929-31-30-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-31-5929-31-31-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-31-5929-31-31-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-31-5929-31-32-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-31-5929-31-32-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-31-5929-31-33-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-31-5929-31-33-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-31-5929-31-34-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-31-5929-31-34-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-31-5929-31-35-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-31-5929-31-35-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-31-5929-31-36-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-31-5929-31-36-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-31-5929-31-37-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-31-5929-31-37-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-31-5929-31-38-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-31-5929-31-38-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-31-5929-31-39-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-31-5929-31-39-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-31-5929-32-30-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-31-5929-32-30-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-31-5929-32-31-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-31-5929-32-31-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-31-5929-32-32-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-31-5929-32-32-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-31-5929-32-33-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-31-5929-32-33-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-32-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-32-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-32-5929-31-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-32-5929-31-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-32-5929-32-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-32-5929-32-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-32-5929-33-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-32-5929-33-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-32-5929-34-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-32-5929-34-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-32-5929-35-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-32-5929-35-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-32-5929-36-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-32-5929-36-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-32-5929-37-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-32-5929-37-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-32-5929-38-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-32-5929-38-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-32-5929-39-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-32-5929-39-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-32-5929-31-30-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-32-5929-31-30-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-32-5929-31-31-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-32-5929-31-31-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-32-5929-31-32-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-32-5929-31-32-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-32-5929-31-33-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-32-5929-31-33-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-32-5929-31-34-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-32-5929-31-34-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-32-5929-31-35-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-32-5929-31-35-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-32-5929-31-36-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-32-5929-31-36-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-32-5929-31-37-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-32-5929-31-37-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-32-5929-31-38-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-32-5929-31-38-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-32-5929-31-39-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-32-5929-31-39-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-32-5929-32-30-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-32-5929-32-30-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-32-5929-32-31-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-32-5929-32-31-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-32-5929-32-32-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-32-5929-32-32-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-32-5929-32-33-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-32-5929-32-33-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-33-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-33-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-33-5929-31-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-33-5929-31-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-33-5929-32-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-33-5929-32-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-33-5929-33-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-33-5929-33-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-33-5929-34-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-33-5929-34-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-33-5929-35-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-33-5929-35-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-33-5929-36-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-33-5929-36-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-33-5929-37-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-33-5929-37-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-33-5929-38-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-33-5929-38-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-33-5929-39-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-33-5929-39-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-33-5929-31-30-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-33-5929-31-30-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-33-5929-31-31-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-33-5929-31-31-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-33-5929-31-32-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-33-5929-31-32-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-33-5929-31-33-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-33-5929-31-33-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-33-5929-31-34-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-33-5929-31-34-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-33-5929-31-35-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-33-5929-31-35-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-33-5929-31-36-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-33-5929-31-36-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-33-5929-31-37-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-33-5929-31-37-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-33-5929-31-38-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-33-5929-31-38-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-33-5929-31-39-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-33-5929-31-39-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-33-5929-32-30-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-33-5929-32-30-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-33-5929-32-31-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-33-5929-32-31-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-33-5929-32-32-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-33-5929-32-32-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-33-5929-32-33-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-33-5929-32-33-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-34-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-34-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-34-5929-31-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-34-5929-31-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-34-5929-32-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-34-5929-32-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-34-5929-33-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-34-5929-33-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-34-5929-34-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-34-5929-34-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-34-5929-35-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-34-5929-35-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-34-5929-36-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-34-5929-36-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-34-5929-37-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-34-5929-37-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-34-5929-38-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-34-5929-38-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-34-5929-39-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-34-5929-39-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-34-5929-31-30-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-34-5929-31-30-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-34-5929-31-31-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-34-5929-31-31-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-34-5929-31-32-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-34-5929-31-32-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-34-5929-31-33-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-34-5929-31-33-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-34-5929-31-34-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-34-5929-31-34-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-34-5929-31-35-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-34-5929-31-35-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-34-5929-31-36-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-34-5929-31-36-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-34-5929-31-37-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-34-5929-31-37-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-34-5929-31-38-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-34-5929-31-38-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-34-5929-31-39-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-34-5929-31-39-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-34-5929-32-30-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-34-5929-32-30-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-34-5929-32-31-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-34-5929-32-31-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-34-5929-32-32-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-34-5929-32-32-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-34-5929-32-33-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-34-5929-32-33-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-35-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-35-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-35-5929-31-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-35-5929-31-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-35-5929-32-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-35-5929-32-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-35-5929-33-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-35-5929-33-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-35-5929-34-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-35-5929-34-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-35-5929-35-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-35-5929-35-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-35-5929-36-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-35-5929-36-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-35-5929-37-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-35-5929-37-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-35-5929-38-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-35-5929-38-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-35-5929-39-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-35-5929-39-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-35-5929-31-30-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-35-5929-31-30-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-35-5929-31-31-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-35-5929-31-31-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-35-5929-31-32-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-35-5929-31-32-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-35-5929-31-33-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-35-5929-31-33-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-35-5929-31-34-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-35-5929-31-34-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-35-5929-31-35-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-35-5929-31-35-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-35-5929-31-36-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-35-5929-31-36-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-35-5929-31-37-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-35-5929-31-37-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-35-5929-31-38-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-35-5929-31-38-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-35-5929-31-39-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-35-5929-31-39-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-35-5929-32-30-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-35-5929-32-30-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-35-5929-32-31-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-35-5929-32-31-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-35-5929-32-32-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-35-5929-32-32-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-35-5929-32-33-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-35-5929-32-33-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-36-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-36-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-36-5929-31-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-36-5929-31-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-36-5929-32-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-36-5929-32-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-36-5929-33-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-36-5929-33-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-36-5929-34-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-36-5929-34-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-36-5929-35-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-36-5929-35-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-36-5929-36-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-36-5929-36-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-36-5929-37-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-36-5929-37-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-36-5929-38-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-36-5929-38-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-36-5929-39-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-36-5929-39-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-36-5929-31-30-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-36-5929-31-30-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-36-5929-31-31-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-36-5929-31-31-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-36-5929-31-32-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-36-5929-31-32-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-36-5929-31-33-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-36-5929-31-33-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-36-5929-31-34-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-36-5929-31-34-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-36-5929-31-35-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-36-5929-31-35-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-36-5929-31-36-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-36-5929-31-36-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-36-5929-31-37-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-36-5929-31-37-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-36-5929-31-38-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-36-5929-31-38-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-36-5929-31-39-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-36-5929-31-39-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-36-5929-32-30-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-36-5929-32-30-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-36-5929-32-31-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-36-5929-32-31-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-36-5929-32-32-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-36-5929-32-32-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-36-5929-32-33-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-36-5929-32-33-5c0f-65f6-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-37-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-37-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-38-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-38-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-39-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-39-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-31-30-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-31-30-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-31-31-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-31-31-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-31-32-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-31-32-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-31-33-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-31-33-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-31-34-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-31-34-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-31-35-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-31-35-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-31-36-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-31-36-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-31-37-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-31-37-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-31-38-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-31-38-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-31-39-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-31-39-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-32-30-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-32-30-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-32-31-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-32-31-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-32-32-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-32-32-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-32-33-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-32-33-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-32-34-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-32-34-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-32-35-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-32-35-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-32-36-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-32-36-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-32-37-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-32-37-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-32-38-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-32-38-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-32-39-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-32-39-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-33-30-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-33-30-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-33-31-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-33-31-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-33-32-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-33-32-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-33-33-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-33-33-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-33-34-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-33-34-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-33-35-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-33-35-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-33-36-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-33-36-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-33-37-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-33-37-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-33-38-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-33-38-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-33-39-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-33-39-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-34-30-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-34-30-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-34-31-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-34-31-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-34-32-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-34-32-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-34-33-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-34-33-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-34-34-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-34-34-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-34-35-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-34-35-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-34-36-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-34-36-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-34-37-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-34-37-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-34-38-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-34-38-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-34-39-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-34-39-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-35-30-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-35-30-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-35-31-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-35-31-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-35-32-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-35-32-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-35-33-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-35-33-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-35-34-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-35-34-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-35-35-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-35-35-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-35-36-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-35-36-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-35-37-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-35-37-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-35-38-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-35-38-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-35-39-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-35-39-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-36-30-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-36-30-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-36-31-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-36-31-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-36-32-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-36-32-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-36-33-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-36-33-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-36-34-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-36-34-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-36-35-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-36-35-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-36-36-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-36-36-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-36-37-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-36-37-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-36-38-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-36-38-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-36-39-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-36-39-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-37-30-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-37-30-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-37-31-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-37-31-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-37-32-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-37-32-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-37-33-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-37-33-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-37-34-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-37-34-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-37-35-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-37-35-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-37-36-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-37-36-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-37-37-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-37-37-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-37-38-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-37-38-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-37-39-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-37-39-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-38-30-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-38-30-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-38-31-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-38-31-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-38-32-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-38-32-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-38-33-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-38-33-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-38-34-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-38-34-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-38-35-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-38-35-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-38-36-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-38-36-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-38-37-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-38-37-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-38-38-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-38-38-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-38-39-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-38-39-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-39-30-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-39-30-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-39-31-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-39-31-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-39-32-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-39-32-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-39-33-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-39-33-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-39-34-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-39-34-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-39-35-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-39-35-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-39-36-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-39-36-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-39-37-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-39-37-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-39-38-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-39-38-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-39-39-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-39-39-5929-540e-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-reset-39-39-5929-4ee5-4e0a-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "reverse/codex-v082-reset-39-39-5929-4ee5-4e0a-91cd-7f6e.png": [
+    38,
+    242
+  ],
+  "forward/codex-v082-fresh-521a-521a-66f4-65b0.png": [
+    32,
+    210
+  ],
+  "reverse/codex-v082-fresh-521a-521a-66f4-65b0.png": [
+    32,
+    210
+  ],
+  "forward/codex-v082-fresh-7b49-5f85-20-4d-61-63.png": [
+    32,
+    210
+  ],
+  "reverse/codex-v082-fresh-7b49-5f85-20-4d-61-63.png": [
+    32,
+    210
+  ],
+  "forward/codex-v082-fresh-8fde-63a5-65ad-5f00.png": [
+    32,
+    210
+  ],
+  "reverse/codex-v082-fresh-8fde-63a5-65ad-5f00.png": [
+    32,
+    210
+  ],
+  "forward/codex-v082-fresh-6570-636e-8fc7-671f.png": [
+    32,
+    210
+  ],
+  "reverse/codex-v082-fresh-6570-636e-8fc7-671f.png": [
+    32,
+    210
+  ],
+  "forward/codex-v082-fresh-31-5206-524d.png": [
+    32,
+    210
+  ],
+  "reverse/codex-v082-fresh-31-5206-524d.png": [
+    32,
+    210
+  ],
+  "forward/codex-v082-fresh-32-5206-524d.png": [
+    32,
+    210
+  ],
+  "reverse/codex-v082-fresh-32-5206-524d.png": [
+    32,
+    210
+  ],
+  "forward/codex-v082-fresh-33-5206-524d.png": [
+    32,
+    210
+  ],
+  "reverse/codex-v082-fresh-33-5206-524d.png": [
+    32,
+    210
+  ],
+  "forward/codex-v082-fresh-34-5206-524d.png": [
+    32,
+    210
+  ],
+  "reverse/codex-v082-fresh-34-5206-524d.png": [
+    32,
+    210
+  ],
+  "forward/codex-v082-fresh-35-5206-524d.png": [
+    32,
+    210
+  ],
+  "reverse/codex-v082-fresh-35-5206-524d.png": [
+    32,
+    210
+  ],
+  "forward/codex-v082-fresh-36-5206-524d.png": [
+    32,
+    210
+  ],
+  "reverse/codex-v082-fresh-36-5206-524d.png": [
+    32,
+    210
+  ],
+  "forward/codex-v082-fresh-37-5206-524d.png": [
+    32,
+    210
+  ],
+  "reverse/codex-v082-fresh-37-5206-524d.png": [
+    32,
+    210
+  ],
+  "forward/codex-v082-fresh-38-5206-524d.png": [
+    32,
+    210
+  ],
+  "reverse/codex-v082-fresh-38-5206-524d.png": [
+    32,
+    210
+  ],
+  "forward/codex-v082-fresh-39-5206-524d.png": [
+    32,
+    210
+  ],
+  "reverse/codex-v082-fresh-39-5206-524d.png": [
+    32,
+    210
+  ],
+  "forward/codex-v082-fresh-31-30-5206-524d.png": [
+    32,
+    210
+  ],
+  "reverse/codex-v082-fresh-31-30-5206-524d.png": [
+    32,
+    210
+  ],
+  "forward/codex-v082-fresh-31-31-5206-524d.png": [
+    32,
+    210
+  ],
+  "reverse/codex-v082-fresh-31-31-5206-524d.png": [
+    32,
+    210
+  ],
+  "forward/codex-v082-fresh-31-32-5206-524d.png": [
+    32,
+    210
+  ],
+  "reverse/codex-v082-fresh-31-32-5206-524d.png": [
+    32,
+    210
+  ],
+  "forward/codex-v082-fresh-31-33-5206-524d.png": [
+    32,
+    210
+  ],
+  "reverse/codex-v082-fresh-31-33-5206-524d.png": [
+    32,
+    210
+  ],
+  "forward/codex-v082-fresh-31-34-5206-524d.png": [
+    32,
+    210
+  ],
+  "reverse/codex-v082-fresh-31-34-5206-524d.png": [
+    32,
+    210
+  ],
+  "forward/codex-v082-fresh-31-35-5206-524d.png": [
+    32,
+    210
+  ],
+  "reverse/codex-v082-fresh-31-35-5206-524d.png": [
+    32,
+    210
+  ],
+  "forward/codex-v082-fresh-31-36-5206-524d.png": [
+    32,
+    210
+  ],
+  "reverse/codex-v082-fresh-31-36-5206-524d.png": [
+    32,
+    210
+  ],
+  "forward/codex-v082-fresh-31-37-5206-524d.png": [
+    32,
+    210
+  ],
+  "reverse/codex-v082-fresh-31-37-5206-524d.png": [
+    32,
+    210
+  ],
+  "forward/codex-v082-fresh-31-38-5206-524d.png": [
+    32,
+    210
+  ],
+  "reverse/codex-v082-fresh-31-38-5206-524d.png": [
+    32,
+    210
+  ],
+  "forward/codex-v082-fresh-31-39-5206-524d.png": [
+    32,
+    210
+  ],
+  "reverse/codex-v082-fresh-31-39-5206-524d.png": [
+    32,
+    210
+  ],
+  "forward/codex-v082-fresh-32-30-5206-524d.png": [
+    32,
+    210
+  ],
+  "reverse/codex-v082-fresh-32-30-5206-524d.png": [
+    32,
+    210
+  ],
+  "forward/codex-v082-fresh-32-31-5206-524d.png": [
+    32,
+    210
+  ],
+  "reverse/codex-v082-fresh-32-31-5206-524d.png": [
+    32,
+    210
+  ],
+  "forward/codex-v082-fresh-32-32-5206-524d.png": [
+    32,
+    210
+  ],
+  "reverse/codex-v082-fresh-32-32-5206-524d.png": [
+    32,
+    210
+  ],
+  "forward/codex-v082-fresh-32-33-5206-524d.png": [
+    32,
+    210
+  ],
+  "reverse/codex-v082-fresh-32-33-5206-524d.png": [
+    32,
+    210
+  ],
+  "forward/codex-v082-fresh-32-34-5206-524d.png": [
+    32,
+    210
+  ],
+  "reverse/codex-v082-fresh-32-34-5206-524d.png": [
+    32,
+    210
+  ],
+  "forward/codex-v082-fresh-32-35-5206-524d.png": [
+    32,
+    210
+  ],
+  "reverse/codex-v082-fresh-32-35-5206-524d.png": [
+    32,
+    210
+  ],
+  "forward/codex-v082-fresh-32-36-5206-524d.png": [
+    32,
+    210
+  ],
+  "reverse/codex-v082-fresh-32-36-5206-524d.png": [
+    32,
+    210
+  ],
+  "forward/codex-v082-fresh-32-37-5206-524d.png": [
+    32,
+    210
+  ],
+  "reverse/codex-v082-fresh-32-37-5206-524d.png": [
+    32,
+    210
+  ],
+  "forward/codex-v082-fresh-32-38-5206-524d.png": [
+    32,
+    210
+  ],
+  "reverse/codex-v082-fresh-32-38-5206-524d.png": [
+    32,
+    210
+  ],
+  "forward/codex-v082-fresh-32-39-5206-524d.png": [
+    32,
+    210
+  ],
+  "reverse/codex-v082-fresh-32-39-5206-524d.png": [
+    32,
+    210
+  ],
+  "forward/codex-v082-fresh-33-30-5206-524d.png": [
+    32,
+    210
+  ],
+  "reverse/codex-v082-fresh-33-30-5206-524d.png": [
+    32,
+    210
+  ],
+  "forward/codex-v082-fresh-33-31-5206-524d.png": [
+    32,
+    210
+  ],
+  "reverse/codex-v082-fresh-33-31-5206-524d.png": [
+    32,
+    210
+  ],
+  "forward/codex-v082-fresh-33-32-5206-524d.png": [
+    32,
+    210
+  ],
+  "reverse/codex-v082-fresh-33-32-5206-524d.png": [
+    32,
+    210
+  ],
+  "forward/codex-v082-fresh-33-33-5206-524d.png": [
+    32,
+    210
+  ],
+  "reverse/codex-v082-fresh-33-33-5206-524d.png": [
+    32,
+    210
+  ],
+  "forward/codex-v082-fresh-33-34-5206-524d.png": [
+    32,
+    210
+  ],
+  "reverse/codex-v082-fresh-33-34-5206-524d.png": [
+    32,
+    210
+  ],
+  "forward/codex-v082-fresh-33-35-5206-524d.png": [
+    32,
+    210
+  ],
+  "reverse/codex-v082-fresh-33-35-5206-524d.png": [
+    32,
+    210
+  ],
+  "forward/codex-v082-fresh-33-36-5206-524d.png": [
+    32,
+    210
+  ],
+  "reverse/codex-v082-fresh-33-36-5206-524d.png": [
+    32,
+    210
+  ],
+  "forward/codex-v082-fresh-33-37-5206-524d.png": [
+    32,
+    210
+  ],
+  "reverse/codex-v082-fresh-33-37-5206-524d.png": [
+    32,
+    210
+  ],
+  "forward/codex-v082-fresh-33-38-5206-524d.png": [
+    32,
+    210
+  ],
+  "reverse/codex-v082-fresh-33-38-5206-524d.png": [
+    32,
+    210
+  ],
+  "forward/codex-v082-fresh-33-39-5206-524d.png": [
+    32,
+    210
+  ],
+  "reverse/codex-v082-fresh-33-39-5206-524d.png": [
+    32,
+    210
+  ],
+  "forward/codex-v082-fresh-34-30-5206-524d.png": [
+    32,
+    210
+  ],
+  "reverse/codex-v082-fresh-34-30-5206-524d.png": [
+    32,
+    210
+  ],
+  "forward/codex-v082-fresh-34-31-5206-524d.png": [
+    32,
+    210
+  ],
+  "reverse/codex-v082-fresh-34-31-5206-524d.png": [
+    32,
+    210
+  ],
+  "forward/codex-v082-fresh-34-32-5206-524d.png": [
+    32,
+    210
+  ],
+  "reverse/codex-v082-fresh-34-32-5206-524d.png": [
+    32,
+    210
+  ],
+  "forward/codex-v082-fresh-34-33-5206-524d.png": [
+    32,
+    210
+  ],
+  "reverse/codex-v082-fresh-34-33-5206-524d.png": [
+    32,
+    210
+  ],
+  "forward/codex-v082-fresh-34-34-5206-524d.png": [
+    32,
+    210
+  ],
+  "reverse/codex-v082-fresh-34-34-5206-524d.png": [
+    32,
+    210
+  ],
+  "forward/codex-v082-fresh-34-35-5206-524d.png": [
+    32,
+    210
+  ],
+  "reverse/codex-v082-fresh-34-35-5206-524d.png": [
+    32,
+    210
+  ],
+  "forward/codex-v082-fresh-34-36-5206-524d.png": [
+    32,
+    210
+  ],
+  "reverse/codex-v082-fresh-34-36-5206-524d.png": [
+    32,
+    210
+  ],
+  "forward/codex-v082-fresh-34-37-5206-524d.png": [
+    32,
+    210
+  ],
+  "reverse/codex-v082-fresh-34-37-5206-524d.png": [
+    32,
+    210
+  ],
+  "forward/codex-v082-fresh-34-38-5206-524d.png": [
+    32,
+    210
+  ],
+  "reverse/codex-v082-fresh-34-38-5206-524d.png": [
+    32,
+    210
+  ],
+  "forward/codex-v082-fresh-34-39-5206-524d.png": [
+    32,
+    210
+  ],
+  "reverse/codex-v082-fresh-34-39-5206-524d.png": [
+    32,
+    210
+  ],
+  "forward/codex-v082-fresh-35-30-5206-524d.png": [
+    32,
+    210
+  ],
+  "reverse/codex-v082-fresh-35-30-5206-524d.png": [
+    32,
+    210
+  ],
+  "forward/codex-v082-fresh-35-31-5206-524d.png": [
+    32,
+    210
+  ],
+  "reverse/codex-v082-fresh-35-31-5206-524d.png": [
+    32,
+    210
+  ],
+  "forward/codex-v082-fresh-35-32-5206-524d.png": [
+    32,
+    210
+  ],
+  "reverse/codex-v082-fresh-35-32-5206-524d.png": [
+    32,
+    210
+  ],
+  "forward/codex-v082-fresh-35-33-5206-524d.png": [
+    32,
+    210
+  ],
+  "reverse/codex-v082-fresh-35-33-5206-524d.png": [
+    32,
+    210
+  ],
+  "forward/codex-v082-fresh-35-34-5206-524d.png": [
+    32,
+    210
+  ],
+  "reverse/codex-v082-fresh-35-34-5206-524d.png": [
+    32,
+    210
+  ],
+  "forward/codex-v082-fresh-35-35-5206-524d.png": [
+    32,
+    210
+  ],
+  "reverse/codex-v082-fresh-35-35-5206-524d.png": [
+    32,
+    210
+  ],
+  "forward/codex-v082-fresh-35-36-5206-524d.png": [
+    32,
+    210
+  ],
+  "reverse/codex-v082-fresh-35-36-5206-524d.png": [
+    32,
+    210
+  ],
+  "forward/codex-v082-fresh-35-37-5206-524d.png": [
+    32,
+    210
+  ],
+  "reverse/codex-v082-fresh-35-37-5206-524d.png": [
+    32,
+    210
+  ],
+  "forward/codex-v082-fresh-35-38-5206-524d.png": [
+    32,
+    210
+  ],
+  "reverse/codex-v082-fresh-35-38-5206-524d.png": [
+    32,
+    210
+  ],
+  "forward/codex-v082-fresh-35-39-5206-524d.png": [
+    32,
+    210
+  ],
+  "reverse/codex-v082-fresh-35-39-5206-524d.png": [
+    32,
+    210
+  ],
+  "forward/codex-v082-fresh-36-30-5206-524d.png": [
+    32,
+    210
+  ],
+  "reverse/codex-v082-fresh-36-30-5206-524d.png": [
+    32,
+    210
+  ],
+  "forward/codex-v082-fresh-36-31-5206-524d.png": [
+    32,
+    210
+  ],
+  "reverse/codex-v082-fresh-36-31-5206-524d.png": [
+    32,
+    210
+  ],
+  "forward/codex-v082-fresh-36-32-5206-524d.png": [
+    32,
+    210
+  ],
+  "reverse/codex-v082-fresh-36-32-5206-524d.png": [
+    32,
+    210
+  ],
+  "forward/codex-v082-fresh-36-33-5206-524d.png": [
+    32,
+    210
+  ],
+  "reverse/codex-v082-fresh-36-33-5206-524d.png": [
+    32,
+    210
+  ],
+  "forward/codex-v082-fresh-36-34-5206-524d.png": [
+    32,
+    210
+  ],
+  "reverse/codex-v082-fresh-36-34-5206-524d.png": [
+    32,
+    210
+  ],
+  "forward/codex-v082-fresh-36-35-5206-524d.png": [
+    32,
+    210
+  ],
+  "reverse/codex-v082-fresh-36-35-5206-524d.png": [
+    32,
+    210
+  ],
+  "forward/codex-v082-fresh-36-36-5206-524d.png": [
+    32,
+    210
+  ],
+  "reverse/codex-v082-fresh-36-36-5206-524d.png": [
+    32,
+    210
+  ],
+  "forward/codex-v082-fresh-36-37-5206-524d.png": [
+    32,
+    210
+  ],
+  "reverse/codex-v082-fresh-36-37-5206-524d.png": [
+    32,
+    210
+  ],
+  "forward/codex-v082-fresh-36-38-5206-524d.png": [
+    32,
+    210
+  ],
+  "reverse/codex-v082-fresh-36-38-5206-524d.png": [
+    32,
+    210
+  ],
+  "forward/codex-v082-fresh-36-39-5206-524d.png": [
+    32,
+    210
+  ],
+  "reverse/codex-v082-fresh-36-39-5206-524d.png": [
+    32,
+    210
+  ],
+  "forward/codex-v082-fresh-37-30-5206-524d.png": [
+    32,
+    210
+  ],
+  "reverse/codex-v082-fresh-37-30-5206-524d.png": [
+    32,
+    210
+  ],
+  "forward/codex-v082-fresh-37-31-5206-524d.png": [
+    32,
+    210
+  ],
+  "reverse/codex-v082-fresh-37-31-5206-524d.png": [
+    32,
+    210
+  ],
+  "forward/codex-v082-fresh-37-32-5206-524d.png": [
+    32,
+    210
+  ],
+  "reverse/codex-v082-fresh-37-32-5206-524d.png": [
+    32,
+    210
+  ],
+  "forward/codex-v082-fresh-37-33-5206-524d.png": [
+    32,
+    210
+  ],
+  "reverse/codex-v082-fresh-37-33-5206-524d.png": [
+    32,
+    210
+  ],
+  "forward/codex-v082-fresh-37-34-5206-524d.png": [
+    32,
+    210
+  ],
+  "reverse/codex-v082-fresh-37-34-5206-524d.png": [
+    32,
+    210
+  ],
+  "forward/codex-v082-fresh-37-35-5206-524d.png": [
+    32,
+    210
+  ],
+  "reverse/codex-v082-fresh-37-35-5206-524d.png": [
+    32,
+    210
+  ],
+  "forward/codex-v082-fresh-37-36-5206-524d.png": [
+    32,
+    210
+  ],
+  "reverse/codex-v082-fresh-37-36-5206-524d.png": [
+    32,
+    210
+  ],
+  "forward/codex-v082-fresh-37-37-5206-524d.png": [
+    32,
+    210
+  ],
+  "reverse/codex-v082-fresh-37-37-5206-524d.png": [
+    32,
+    210
+  ],
+  "forward/codex-v082-fresh-37-38-5206-524d.png": [
+    32,
+    210
+  ],
+  "reverse/codex-v082-fresh-37-38-5206-524d.png": [
+    32,
+    210
+  ],
+  "forward/codex-v082-fresh-37-39-5206-524d.png": [
+    32,
+    210
+  ],
+  "reverse/codex-v082-fresh-37-39-5206-524d.png": [
+    32,
+    210
+  ],
+  "forward/codex-v082-fresh-38-30-5206-524d.png": [
+    32,
+    210
+  ],
+  "reverse/codex-v082-fresh-38-30-5206-524d.png": [
+    32,
+    210
+  ],
+  "forward/codex-v082-fresh-38-31-5206-524d.png": [
+    32,
+    210
+  ],
+  "reverse/codex-v082-fresh-38-31-5206-524d.png": [
+    32,
+    210
+  ],
+  "forward/codex-v082-fresh-38-32-5206-524d.png": [
+    32,
+    210
+  ],
+  "reverse/codex-v082-fresh-38-32-5206-524d.png": [
+    32,
+    210
+  ],
+  "forward/codex-v082-fresh-38-33-5206-524d.png": [
+    32,
+    210
+  ],
+  "reverse/codex-v082-fresh-38-33-5206-524d.png": [
+    32,
+    210
+  ],
+  "forward/codex-v082-fresh-38-34-5206-524d.png": [
+    32,
+    210
+  ],
+  "reverse/codex-v082-fresh-38-34-5206-524d.png": [
+    32,
+    210
+  ],
+  "forward/codex-v082-fresh-38-35-5206-524d.png": [
+    32,
+    210
+  ],
+  "reverse/codex-v082-fresh-38-35-5206-524d.png": [
+    32,
+    210
+  ],
+  "forward/codex-v082-fresh-38-36-5206-524d.png": [
+    32,
+    210
+  ],
+  "reverse/codex-v082-fresh-38-36-5206-524d.png": [
+    32,
+    210
+  ],
+  "forward/codex-v082-fresh-38-37-5206-524d.png": [
+    32,
+    210
+  ],
+  "reverse/codex-v082-fresh-38-37-5206-524d.png": [
+    32,
+    210
+  ],
+  "forward/codex-v082-fresh-38-38-5206-524d.png": [
+    32,
+    210
+  ],
+  "reverse/codex-v082-fresh-38-38-5206-524d.png": [
+    32,
+    210
+  ],
+  "forward/codex-v082-fresh-38-39-5206-524d.png": [
+    32,
+    210
+  ],
+  "reverse/codex-v082-fresh-38-39-5206-524d.png": [
+    32,
+    210
+  ],
+  "forward/codex-v082-fresh-39-30-5206-524d.png": [
+    32,
+    210
+  ],
+  "reverse/codex-v082-fresh-39-30-5206-524d.png": [
+    32,
+    210
+  ],
+  "forward/codex-v082-fresh-39-31-5206-524d.png": [
+    32,
+    210
+  ],
+  "reverse/codex-v082-fresh-39-31-5206-524d.png": [
+    32,
+    210
+  ],
+  "forward/codex-v082-fresh-39-32-5206-524d.png": [
+    32,
+    210
+  ],
+  "reverse/codex-v082-fresh-39-32-5206-524d.png": [
+    32,
+    210
+  ],
+  "forward/codex-v082-fresh-39-33-5206-524d.png": [
+    32,
+    210
+  ],
+  "reverse/codex-v082-fresh-39-33-5206-524d.png": [
+    32,
+    210
+  ],
+  "forward/codex-v082-fresh-39-34-5206-524d.png": [
+    32,
+    210
+  ],
+  "reverse/codex-v082-fresh-39-34-5206-524d.png": [
+    32,
+    210
+  ],
+  "forward/codex-v082-fresh-39-35-5206-524d.png": [
+    32,
+    210
+  ],
+  "reverse/codex-v082-fresh-39-35-5206-524d.png": [
+    32,
+    210
+  ],
+  "forward/codex-v082-fresh-39-36-5206-524d.png": [
+    32,
+    210
+  ],
+  "reverse/codex-v082-fresh-39-36-5206-524d.png": [
+    32,
+    210
+  ],
+  "forward/codex-v082-fresh-39-37-5206-524d.png": [
+    32,
+    210
+  ],
+  "reverse/codex-v082-fresh-39-37-5206-524d.png": [
+    32,
+    210
+  ],
+  "forward/codex-v082-fresh-39-38-5206-524d.png": [
+    32,
+    210
+  ],
+  "reverse/codex-v082-fresh-39-38-5206-524d.png": [
+    32,
+    210
+  ],
+  "forward/codex-v082-fresh-39-39-5206-524d.png": [
+    32,
+    210
+  ],
+  "reverse/codex-v082-fresh-39-39-5206-524d.png": [
+    32,
+    210
+  ],
+  "forward/codex-v082-ring-empty.png": [
+    168,
+    168
+  ],
+  "reverse/codex-v082-ring-empty.png": [
+    168,
+    168
+  ],
+  "forward/codex-v082-ring-0.png": [
+    168,
+    168
+  ],
+  "reverse/codex-v082-ring-0.png": [
+    168,
+    168
+  ],
+  "forward/codex-v082-ring-1.png": [
+    168,
+    168
+  ],
+  "reverse/codex-v082-ring-1.png": [
+    168,
+    168
+  ],
+  "forward/codex-v082-ring-2.png": [
+    168,
+    168
+  ],
+  "reverse/codex-v082-ring-2.png": [
+    168,
+    168
+  ],
+  "forward/codex-v082-ring-3.png": [
+    168,
+    168
+  ],
+  "reverse/codex-v082-ring-3.png": [
+    168,
+    168
+  ],
+  "forward/codex-v082-ring-4.png": [
+    168,
+    168
+  ],
+  "reverse/codex-v082-ring-4.png": [
+    168,
+    168
+  ],
+  "forward/codex-v082-ring-5.png": [
+    168,
+    168
+  ],
+  "reverse/codex-v082-ring-5.png": [
+    168,
+    168
+  ],
+  "forward/codex-v082-ring-6.png": [
+    168,
+    168
+  ],
+  "reverse/codex-v082-ring-6.png": [
+    168,
+    168
+  ],
+  "forward/codex-v082-ring-7.png": [
+    168,
+    168
+  ],
+  "reverse/codex-v082-ring-7.png": [
+    168,
+    168
+  ],
+  "forward/codex-v082-ring-8.png": [
+    168,
+    168
+  ],
+  "reverse/codex-v082-ring-8.png": [
+    168,
+    168
+  ],
+  "forward/codex-v082-ring-9.png": [
+    168,
+    168
+  ],
+  "reverse/codex-v082-ring-9.png": [
+    168,
+    168
+  ],
+  "forward/codex-v082-ring-10.png": [
+    168,
+    168
+  ],
+  "reverse/codex-v082-ring-10.png": [
+    168,
+    168
+  ],
+  "forward/codex-v082-ring-11.png": [
+    168,
+    168
+  ],
+  "reverse/codex-v082-ring-11.png": [
+    168,
+    168
+  ],
+  "forward/codex-v082-ring-12.png": [
+    168,
+    168
+  ],
+  "reverse/codex-v082-ring-12.png": [
+    168,
+    168
+  ],
+  "forward/codex-v082-ring-13.png": [
+    168,
+    168
+  ],
+  "reverse/codex-v082-ring-13.png": [
+    168,
+    168
+  ],
+  "forward/codex-v082-ring-14.png": [
+    168,
+    168
+  ],
+  "reverse/codex-v082-ring-14.png": [
+    168,
+    168
+  ],
+  "forward/codex-v082-ring-15.png": [
+    168,
+    168
+  ],
+  "reverse/codex-v082-ring-15.png": [
+    168,
+    168
+  ],
+  "forward/codex-v082-ring-16.png": [
+    168,
+    168
+  ],
+  "reverse/codex-v082-ring-16.png": [
+    168,
+    168
+  ],
+  "forward/codex-v082-ring-17.png": [
+    168,
+    168
+  ],
+  "reverse/codex-v082-ring-17.png": [
+    168,
+    168
+  ],
+  "forward/codex-v082-ring-18.png": [
+    168,
+    168
+  ],
+  "reverse/codex-v082-ring-18.png": [
+    168,
+    168
+  ],
+  "forward/codex-v082-ring-19.png": [
+    168,
+    168
+  ],
+  "reverse/codex-v082-ring-19.png": [
+    168,
+    168
+  ],
+  "forward/codex-v082-ring-20.png": [
+    168,
+    168
+  ],
+  "reverse/codex-v082-ring-20.png": [
+    168,
+    168
+  ],
+  "forward/codex-v082-ring-21.png": [
+    168,
+    168
+  ],
+  "reverse/codex-v082-ring-21.png": [
+    168,
+    168
+  ],
+  "forward/codex-v082-ring-22.png": [
+    168,
+    168
+  ],
+  "reverse/codex-v082-ring-22.png": [
+    168,
+    168
+  ],
+  "forward/codex-v082-ring-23.png": [
+    168,
+    168
+  ],
+  "reverse/codex-v082-ring-23.png": [
+    168,
+    168
+  ],
+  "forward/codex-v082-ring-24.png": [
+    168,
+    168
+  ],
+  "reverse/codex-v082-ring-24.png": [
+    168,
+    168
+  ],
+  "forward/codex-v082-ring-25.png": [
+    168,
+    168
+  ],
+  "reverse/codex-v082-ring-25.png": [
+    168,
+    168
+  ],
+  "forward/codex-v082-ring-26.png": [
+    168,
+    168
+  ],
+  "reverse/codex-v082-ring-26.png": [
+    168,
+    168
+  ],
+  "forward/codex-v082-ring-27.png": [
+    168,
+    168
+  ],
+  "reverse/codex-v082-ring-27.png": [
+    168,
+    168
+  ],
+  "forward/codex-v082-ring-28.png": [
+    168,
+    168
+  ],
+  "reverse/codex-v082-ring-28.png": [
+    168,
+    168
+  ],
+  "forward/codex-v082-ring-29.png": [
+    168,
+    168
+  ],
+  "reverse/codex-v082-ring-29.png": [
+    168,
+    168
+  ],
+  "forward/codex-v082-ring-30.png": [
+    168,
+    168
+  ],
+  "reverse/codex-v082-ring-30.png": [
+    168,
+    168
+  ],
+  "forward/codex-v082-ring-31.png": [
+    168,
+    168
+  ],
+  "reverse/codex-v082-ring-31.png": [
+    168,
+    168
+  ],
+  "forward/codex-v082-ring-32.png": [
+    168,
+    168
+  ],
+  "reverse/codex-v082-ring-32.png": [
+    168,
+    168
+  ],
+  "forward/codex-v082-ring-33.png": [
+    168,
+    168
+  ],
+  "reverse/codex-v082-ring-33.png": [
+    168,
+    168
+  ],
+  "forward/codex-v082-ring-34.png": [
+    168,
+    168
+  ],
+  "reverse/codex-v082-ring-34.png": [
+    168,
+    168
+  ],
+  "forward/codex-v082-ring-35.png": [
+    168,
+    168
+  ],
+  "reverse/codex-v082-ring-35.png": [
+    168,
+    168
+  ],
+  "forward/codex-v082-ring-36.png": [
+    168,
+    168
+  ],
+  "reverse/codex-v082-ring-36.png": [
+    168,
+    168
+  ],
+  "forward/codex-v082-ring-37.png": [
+    168,
+    168
+  ],
+  "reverse/codex-v082-ring-37.png": [
+    168,
+    168
+  ],
+  "forward/codex-v082-ring-38.png": [
+    168,
+    168
+  ],
+  "reverse/codex-v082-ring-38.png": [
+    168,
+    168
+  ],
+  "forward/codex-v082-ring-39.png": [
+    168,
+    168
+  ],
+  "reverse/codex-v082-ring-39.png": [
+    168,
+    168
+  ],
+  "forward/codex-v082-ring-40.png": [
+    168,
+    168
+  ],
+  "reverse/codex-v082-ring-40.png": [
+    168,
+    168
+  ],
+  "forward/codex-v082-ring-41.png": [
+    168,
+    168
+  ],
+  "reverse/codex-v082-ring-41.png": [
+    168,
+    168
+  ],
+  "forward/codex-v082-ring-42.png": [
+    168,
+    168
+  ],
+  "reverse/codex-v082-ring-42.png": [
+    168,
+    168
+  ],
+  "forward/codex-v082-ring-43.png": [
+    168,
+    168
+  ],
+  "reverse/codex-v082-ring-43.png": [
+    168,
+    168
+  ],
+  "forward/codex-v082-ring-44.png": [
+    168,
+    168
+  ],
+  "reverse/codex-v082-ring-44.png": [
+    168,
+    168
+  ],
+  "forward/codex-v082-ring-45.png": [
+    168,
+    168
+  ],
+  "reverse/codex-v082-ring-45.png": [
+    168,
+    168
+  ],
+  "forward/codex-v082-ring-46.png": [
+    168,
+    168
+  ],
+  "reverse/codex-v082-ring-46.png": [
+    168,
+    168
+  ],
+  "forward/codex-v082-ring-47.png": [
+    168,
+    168
+  ],
+  "reverse/codex-v082-ring-47.png": [
+    168,
+    168
+  ],
+  "forward/codex-v082-ring-48.png": [
+    168,
+    168
+  ],
+  "reverse/codex-v082-ring-48.png": [
+    168,
+    168
+  ],
+  "forward/codex-v082-ring-49.png": [
+    168,
+    168
+  ],
+  "reverse/codex-v082-ring-49.png": [
+    168,
+    168
+  ],
+  "forward/codex-v082-ring-50.png": [
+    168,
+    168
+  ],
+  "reverse/codex-v082-ring-50.png": [
+    168,
+    168
+  ],
+  "forward/codex-v082-ring-51.png": [
+    168,
+    168
+  ],
+  "reverse/codex-v082-ring-51.png": [
+    168,
+    168
+  ],
+  "forward/codex-v082-ring-52.png": [
+    168,
+    168
+  ],
+  "reverse/codex-v082-ring-52.png": [
+    168,
+    168
+  ],
+  "forward/codex-v082-ring-53.png": [
+    168,
+    168
+  ],
+  "reverse/codex-v082-ring-53.png": [
+    168,
+    168
+  ],
+  "forward/codex-v082-ring-54.png": [
+    168,
+    168
+  ],
+  "reverse/codex-v082-ring-54.png": [
+    168,
+    168
+  ],
+  "forward/codex-v082-ring-55.png": [
+    168,
+    168
+  ],
+  "reverse/codex-v082-ring-55.png": [
+    168,
+    168
+  ],
+  "forward/codex-v082-ring-56.png": [
+    168,
+    168
+  ],
+  "reverse/codex-v082-ring-56.png": [
+    168,
+    168
+  ],
+  "forward/codex-v082-ring-57.png": [
+    168,
+    168
+  ],
+  "reverse/codex-v082-ring-57.png": [
+    168,
+    168
+  ],
+  "forward/codex-v082-ring-58.png": [
+    168,
+    168
+  ],
+  "reverse/codex-v082-ring-58.png": [
+    168,
+    168
+  ],
+  "forward/codex-v082-ring-59.png": [
+    168,
+    168
+  ],
+  "reverse/codex-v082-ring-59.png": [
+    168,
+    168
+  ],
+  "forward/codex-v082-ring-60.png": [
+    168,
+    168
+  ],
+  "reverse/codex-v082-ring-60.png": [
+    168,
+    168
+  ],
+  "forward/codex-v082-ring-61.png": [
+    168,
+    168
+  ],
+  "reverse/codex-v082-ring-61.png": [
+    168,
+    168
+  ],
+  "forward/codex-v082-ring-62.png": [
+    168,
+    168
+  ],
+  "reverse/codex-v082-ring-62.png": [
+    168,
+    168
+  ],
+  "forward/codex-v082-ring-63.png": [
+    168,
+    168
+  ],
+  "reverse/codex-v082-ring-63.png": [
+    168,
+    168
+  ],
+  "forward/codex-v082-ring-64.png": [
+    168,
+    168
+  ],
+  "reverse/codex-v082-ring-64.png": [
+    168,
+    168
+  ],
+  "forward/codex-v082-ring-65.png": [
+    168,
+    168
+  ],
+  "reverse/codex-v082-ring-65.png": [
+    168,
+    168
+  ],
+  "forward/codex-v082-ring-66.png": [
+    168,
+    168
+  ],
+  "reverse/codex-v082-ring-66.png": [
+    168,
+    168
+  ],
+  "forward/codex-v082-ring-67.png": [
+    168,
+    168
+  ],
+  "reverse/codex-v082-ring-67.png": [
+    168,
+    168
+  ],
+  "forward/codex-v082-ring-68.png": [
+    168,
+    168
+  ],
+  "reverse/codex-v082-ring-68.png": [
+    168,
+    168
+  ],
+  "forward/codex-v082-ring-69.png": [
+    168,
+    168
+  ],
+  "reverse/codex-v082-ring-69.png": [
+    168,
+    168
+  ],
+  "forward/codex-v082-ring-70.png": [
+    168,
+    168
+  ],
+  "reverse/codex-v082-ring-70.png": [
+    168,
+    168
+  ],
+  "forward/codex-v082-ring-71.png": [
+    168,
+    168
+  ],
+  "reverse/codex-v082-ring-71.png": [
+    168,
+    168
+  ],
+  "forward/codex-v082-ring-72.png": [
+    168,
+    168
+  ],
+  "reverse/codex-v082-ring-72.png": [
+    168,
+    168
+  ],
+  "forward/codex-v082-ring-73.png": [
+    168,
+    168
+  ],
+  "reverse/codex-v082-ring-73.png": [
+    168,
+    168
+  ],
+  "forward/codex-v082-ring-74.png": [
+    168,
+    168
+  ],
+  "reverse/codex-v082-ring-74.png": [
+    168,
+    168
+  ],
+  "forward/codex-v082-ring-75.png": [
+    168,
+    168
+  ],
+  "reverse/codex-v082-ring-75.png": [
+    168,
+    168
+  ],
+  "forward/codex-v082-ring-76.png": [
+    168,
+    168
+  ],
+  "reverse/codex-v082-ring-76.png": [
+    168,
+    168
+  ],
+  "forward/codex-v082-ring-77.png": [
+    168,
+    168
+  ],
+  "reverse/codex-v082-ring-77.png": [
+    168,
+    168
+  ],
+  "forward/codex-v082-ring-78.png": [
+    168,
+    168
+  ],
+  "reverse/codex-v082-ring-78.png": [
+    168,
+    168
+  ],
+  "forward/codex-v082-ring-79.png": [
+    168,
+    168
+  ],
+  "reverse/codex-v082-ring-79.png": [
+    168,
+    168
+  ],
+  "forward/codex-v082-ring-80.png": [
+    168,
+    168
+  ],
+  "reverse/codex-v082-ring-80.png": [
+    168,
+    168
+  ],
+  "forward/codex-v082-ring-81.png": [
+    168,
+    168
+  ],
+  "reverse/codex-v082-ring-81.png": [
+    168,
+    168
+  ],
+  "forward/codex-v082-ring-82.png": [
+    168,
+    168
+  ],
+  "reverse/codex-v082-ring-82.png": [
+    168,
+    168
+  ],
+  "forward/codex-v082-ring-83.png": [
+    168,
+    168
+  ],
+  "reverse/codex-v082-ring-83.png": [
+    168,
+    168
+  ],
+  "forward/codex-v082-ring-84.png": [
+    168,
+    168
+  ],
+  "reverse/codex-v082-ring-84.png": [
+    168,
+    168
+  ],
+  "forward/codex-v082-ring-85.png": [
+    168,
+    168
+  ],
+  "reverse/codex-v082-ring-85.png": [
+    168,
+    168
+  ],
+  "forward/codex-v082-ring-86.png": [
+    168,
+    168
+  ],
+  "reverse/codex-v082-ring-86.png": [
+    168,
+    168
+  ],
+  "forward/codex-v082-ring-87.png": [
+    168,
+    168
+  ],
+  "reverse/codex-v082-ring-87.png": [
+    168,
+    168
+  ],
+  "forward/codex-v082-ring-88.png": [
+    168,
+    168
+  ],
+  "reverse/codex-v082-ring-88.png": [
+    168,
+    168
+  ],
+  "forward/codex-v082-ring-89.png": [
+    168,
+    168
+  ],
+  "reverse/codex-v082-ring-89.png": [
+    168,
+    168
+  ],
+  "forward/codex-v082-ring-90.png": [
+    168,
+    168
+  ],
+  "reverse/codex-v082-ring-90.png": [
+    168,
+    168
+  ],
+  "forward/codex-v082-ring-91.png": [
+    168,
+    168
+  ],
+  "reverse/codex-v082-ring-91.png": [
+    168,
+    168
+  ],
+  "forward/codex-v082-ring-92.png": [
+    168,
+    168
+  ],
+  "reverse/codex-v082-ring-92.png": [
+    168,
+    168
+  ],
+  "forward/codex-v082-ring-93.png": [
+    168,
+    168
+  ],
+  "reverse/codex-v082-ring-93.png": [
+    168,
+    168
+  ],
+  "forward/codex-v082-ring-94.png": [
+    168,
+    168
+  ],
+  "reverse/codex-v082-ring-94.png": [
+    168,
+    168
+  ],
+  "forward/codex-v082-ring-95.png": [
+    168,
+    168
+  ],
+  "reverse/codex-v082-ring-95.png": [
+    168,
+    168
+  ],
+  "forward/codex-v082-ring-96.png": [
+    168,
+    168
+  ],
+  "reverse/codex-v082-ring-96.png": [
+    168,
+    168
+  ],
+  "forward/codex-v082-ring-97.png": [
+    168,
+    168
+  ],
+  "reverse/codex-v082-ring-97.png": [
+    168,
+    168
+  ],
+  "forward/codex-v082-ring-98.png": [
+    168,
+    168
+  ],
+  "reverse/codex-v082-ring-98.png": [
+    168,
+    168
+  ],
+  "forward/codex-v082-ring-99.png": [
+    168,
+    168
+  ],
+  "reverse/codex-v082-ring-99.png": [
+    168,
+    168
+  ],
+  "forward/codex-v082-ring-100.png": [
+    168,
+    168
+  ],
+  "reverse/codex-v082-ring-100.png": [
+    168,
+    168
+  ],
+  "forward/codex-v082-logo.png": [
+    36,
+    36
+  ],
+  "reverse/codex-v082-logo.png": [
+    36,
+    36
+  ],
+  "forward/codex-v082-loading-0.png": [
+    26,
+    26
+  ],
+  "reverse/codex-v082-loading-0.png": [
+    26,
+    26
+  ],
+  "forward/codex-v082-loading-1.png": [
+    26,
+    26
+  ],
+  "reverse/codex-v082-loading-1.png": [
+    26,
+    26
+  ],
+  "forward/codex-v082-loading-2.png": [
+    26,
+    26
+  ],
+  "reverse/codex-v082-loading-2.png": [
+    26,
+    26
+  ],
+  "forward/codex-v082-loading-3.png": [
+    26,
+    26
+  ],
+  "reverse/codex-v082-loading-3.png": [
+    26,
+    26
+  ],
+  "forward/v091-keep-value-30.png": [
+    40,
+    112
+  ],
+  "reverse/v091-keep-value-30.png": [
+    40,
+    112
+  ],
+  "forward/v091-keep-value-120.png": [
+    40,
+    112
+  ],
+  "reverse/v091-keep-value-120.png": [
+    40,
+    112
+  ],
+  "forward/v091-keep-value-off.png": [
+    40,
+    112
+  ],
+  "reverse/v091-keep-value-off.png": [
+    40,
+    112
+  ],
+  "forward/v091-keep-value-pending.png": [
+    40,
+    112
+  ],
+  "reverse/v091-keep-value-pending.png": [
+    40,
+    112
+  ],
+  "forward/v091-keep-value-error.png": [
+    40,
+    112
+  ],
+  "reverse/v091-keep-value-error.png": [
+    40,
+    112
+  ],
+  "forward/v091-carousel-on.png": [
+    40,
+    112
+  ],
+  "reverse/v091-carousel-on.png": [
+    40,
+    112
+  ],
+  "forward/v091-carousel-off.png": [
+    40,
+    112
+  ],
+  "reverse/v091-carousel-off.png": [
+    40,
+    112
+  ],
+  "forward/rest-start.png": [
+    32,
+    64
+  ],
+  "reverse/rest-start.png": [
+    32,
+    64
+  ],
+  "forward/rest-middle.png": [
+    32,
+    64
+  ],
+  "reverse/rest-middle.png": [
+    32,
+    64
+  ],
+  "forward/rest-end.png": [
+    32,
+    62
+  ],
+  "reverse/rest-end.png": [
+    32,
+    62
+  ],
+  "forward/rest-single.png": [
+    32,
+    62
+  ],
+  "reverse/rest-single.png": [
+    32,
+    62
+  ],
+  "forward/today-mark.png": [
+    53,
+    52
+  ],
+  "reverse/today-mark.png": [
+    53,
+    52
+  ]
+}

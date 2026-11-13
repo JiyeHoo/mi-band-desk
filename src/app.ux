@@ -1,0 +1,15 @@
+<script>
+import brightness from '@system.brightness'
+
+export default {
+  onCreate() { console.log('[desk] app created v0.8.0') },
+  onDestroy() {
+    try {
+      brightness.setKeepScreenOn({ keepScreenOn: false })
+    } catch (error) {
+      console.warn('[desk] final keepScreenOn release unavailable')
+    }
+    console.log('[desk] app destroyed')
+  }
+}
+</script>

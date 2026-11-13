@@ -1,0 +1,10 @@
+ChatGPT / OpenAI Blossom
+Copyright and trademark: OpenAI.
+Used only to identify the OpenAI quota source on the Codex usage page.
+This independent personal band app is not an official OpenAI product.
+
+Vector source: ChatGPT desktop application's public bundled asset
+webview/assets/openai-logo-regular-ceb75a1754fa.svg
+Original source retained at scripts/vendor/openai/chatgpt-blossom.svg.
+Rasterized in white at 36x36, then rotated for the physical display.
+Guidelines: https://openai.com/brand/

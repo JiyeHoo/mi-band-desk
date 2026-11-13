@@ -1,0 +1,12 @@
+/.nyc_output
+/coverage
+/node_modules
+/dist
+/build
+/sign
+/.artifacts
+/.device
+.DS_Store
+*.log
+/output/playwright/
+/.playwright-cli/

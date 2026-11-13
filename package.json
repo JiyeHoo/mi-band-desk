@@ -1,0 +1,31 @@
+{
+  "name": "mi-band-desk",
+  "version": "0.9.2",
+  "license": "MIT",
+  "private": true,
+  "description": "小米手环 9 NFC 桌搭机器人、时钟、日历与 Codex 额度卡",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "aiot start --watch",
+    "build": "aiot build && node scripts/verify-package.mjs",
+    "release": "aiot release && node scripts/verify-package.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "emulator": "node scripts/emulator.mjs",
+    "emulator:stop": "node scripts/emulator.mjs --stop",
+    "device:status": "astrobox-cli status",
+    "device:install": "node scripts/install.mjs",
+    "deploy": "npm run build && npm run device:install",
+    "icons": "node scripts/generate-launcher.mjs",
+    "robot:assets": "node scripts/generate-robot.mjs && node scripts/generate-physical.mjs && node scripts/generate-preview.mjs",
+    "physical:assets": "node scripts/generate-physical.mjs && node scripts/generate-preview.mjs",
+    "preview:assets": "node scripts/generate-preview.mjs"
+  },
+  "devDependencies": {
+    "@aiot-toolkit/emulator": "2.0.5",
+    "@aiot-toolkit/jsc": "1.0.9",
+    "aiot-toolkit": "2.0.5",
+    "astrobox-cli": "0.1.5"
+  }
+}

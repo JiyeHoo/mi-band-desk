@@ -1,0 +1,39 @@
+<!doctype html><html><body style="margin:0;background:transparent"><canvas id="asset" width="96" height="96"></canvas><script>
+window.drawSprite=name=>{
+const c=document.querySelector('canvas');c.width=name==='cancel'||name==='confirm'?92:96;c.height=name==='cancel'||name==='confirm'?192:96;
+const x=c.getContext('2d');x.clearRect(0,0,c.width,c.height);if(['open','closed','smile','sad','angry','angry-right','spiral','star-eye','caret','round-eye','flat-eye','plead-eye','cross-eye','u-eye','squeeze-left','squeeze-right'].includes(name)){x.fillStyle='#000';x.fillRect(0,0,96,96)}x.fillStyle='#fff';x.strokeStyle='#fff';x.lineWidth=13;x.lineCap='round';x.lineJoin='round';
+const rr=(a,b,w,h,r,color)=>{x.fillStyle=color;x.beginPath();x.roundRect(a,b,w,h,r);x.fill()};
+if(name==='open')rr(9,6,78,84,29,'#fff');
+if(name==='closed')rr(9,41,78,14,7,'#fff');
+if(name==='smile'||name==='sad'){x.lineWidth=14;x.beginPath();if(name==='smile'){x.moveTo(14,58);x.bezierCurveTo(24,25,72,25,82,58)}else{x.moveTo(15,40);x.bezierCurveTo(28,65,68,65,81,40)}x.stroke()}
+if(name==='angry'||name==='angry-right'){
+ x.save();if(name==='angry-right'){x.translate(96,0);x.scale(-1,1)}
+ x.beginPath();x.moveTo(18,25);x.lineTo(81,43);x.quadraticCurveTo(87,45,87,51);x.lineTo(87,67);x.quadraticCurveTo(87,89,65,89);x.lineTo(32,89);x.quadraticCurveTo(9,89,9,67);x.lineTo(9,34);x.quadraticCurveTo(9,23,18,25);x.closePath();x.fill();x.restore()
+}
+if(name==='spiral'){x.lineWidth=10;x.beginPath();for(let j=0;j<=120;j++){const t=j/120,a=-Math.PI/2+t*Math.PI*3.35,r=35-t*32;const px=48+Math.cos(a)*r,py=48+Math.sin(a)*r;if(j===0)x.moveTo(px,py);else x.lineTo(px,py)}x.stroke()}
+if(name==='caret'){x.lineWidth=14;x.beginPath();x.moveTo(17,61);x.lineTo(42,35);x.quadraticCurveTo(48,29,54,35);x.lineTo(79,61);x.stroke()}
+if(name==='round-eye'){x.lineWidth=14;x.beginPath();x.ellipse(48,48,28,35,0,0,Math.PI*2);x.stroke()}
+if(name==='flat-eye')rr(8,42,80,13,6,'#fff');
+if(name==='plead-eye'){
+ // Rounded, wide tearful eyes with two separate highlights. The white rim
+ // stays substantial at the physical 128px slot instead of reading as a ring.
+ rr(10,7,76,82,31,'#fff');rr(22,22,52,53,23,'#000');
+ x.fillStyle='#fff';x.beginPath();x.ellipse(39,39,10,12,-.35,0,Math.PI*2);x.fill();x.beginPath();x.arc(61,60,7,0,Math.PI*2);x.fill()
+}
+if(name==='cross-eye'){x.lineWidth=14;x.beginPath();x.moveTo(25,25);x.lineTo(71,71);x.moveTo(71,25);x.lineTo(25,71);x.stroke()}
+if(name==='u-eye'){x.lineWidth=14;x.beginPath();x.moveTo(18,30);x.lineTo(18,46);x.bezierCurveTo(18,79,78,79,78,46);x.lineTo(78,30);x.stroke()}
+if(name==='squeeze-left'||name==='squeeze-right'){const a=name==='squeeze-left'?25:71,b=96-a;x.lineWidth=14;x.beginPath();x.moveTo(a,25);x.lineTo(b,48);x.lineTo(a,71);x.stroke()}
+if(name==='heart'){x.fillStyle='#ff8da9';x.beginPath();x.moveTo(48,86);x.bezierCurveTo(-15,47,5,-6,48,24);x.bezierCurveTo(91,-6,111,47,48,86);x.fill()}
+if(name==='tear'){x.fillStyle='#69cbff';x.beginPath();x.moveTo(48,5);x.bezierCurveTo(3,58,15,89,48,89);x.bezierCurveTo(81,89,93,58,48,5);x.fill();rr(32,51,9,20,4,'#c9efff')}
+if(name==='star-eye'||name==='spark'){x.fillStyle=name==='star-eye'?'#fff':'#ffd572';x.beginPath();for(let i=0;i<8;i++){const a=i*Math.PI/4-Math.PI/2,r=i%2?18:43;x.lineTo(48+Math.cos(a)*r,48+Math.sin(a)*r)}x.closePath();x.fill()}
+if(name==='blush'){rr(3,33,90,29,14,'#f492b3');x.strokeStyle='#ffbed3';x.lineWidth=5;for(let i=0;i<3;i++){x.beginPath();x.moveTo(26+i*20,38);x.lineTo(18+i*20,55);x.stroke()}}
+if(name==='anger'){x.strokeStyle='#ff896e';x.lineWidth=9;for(let i=0;i<4;i++){x.save();x.translate(48,48);x.rotate(i*Math.PI/2);x.beginPath();x.moveTo(12,33);x.lineTo(12,12);x.lineTo(33,12);x.stroke();x.restore()}}
+if(name==='cancel'||name==='confirm'){
+ x.save();if(name==='confirm'){x.translate(92,0);x.scale(-1,1)}
+ x.fillStyle=name==='cancel'?'#40282c':'#78e0c3';x.beginPath();x.arc(96,96,96,Math.PI/2,Math.PI*1.5);x.lineTo(92,0);x.lineTo(92,192);x.closePath();x.fill();x.restore();
+ const cx=name==='cancel'?54:38;x.strokeStyle=name==='cancel'?'#ffa495':'#122e28';x.lineWidth=6;x.beginPath();
+ if(name==='cancel'){x.moveTo(cx-13,83);x.lineTo(cx+13,109);x.moveTo(cx+13,83);x.lineTo(cx-13,109)}
+ else{x.moveTo(cx-16,95);x.lineTo(cx-4,108);x.lineTo(cx+18,82)}x.stroke()
+}
+};
+</script></body></html>

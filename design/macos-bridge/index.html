@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Band Desk Bridge · macOS 菜单栏设计</title>
+  <link rel="icon" href="data:,">
+  <style>
+    :root { color-scheme: dark; font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "PingFang SC", sans-serif; }
+    * { box-sizing: border-box; }
+    body { min-height: 100vh; margin: 0; display: grid; place-items: center; background: #172028; color: #f4f7f8; }
+    .stage { width: min(100%, 820px); padding: 48px 24px; }
+    .caption { margin: 0 auto 18px; width: 380px; max-width: 100%; color: #9aadb8; font-size: 13px; }
+    .panel { width: 380px; max-width: 100%; margin: auto; padding: 18px; border: 1px solid #46505a; border-radius: 18px; background: rgba(39, 42, 47, .97); box-shadow: 0 24px 70px #0008; }
+    .row { display: flex; align-items: center; gap: 9px; }
+    .between { justify-content: space-between; }
+    h1 { margin: 0; font-size: 17px; letter-spacing: -.2px; }
+    .subtitle, .fine, .status-value, .metric-label, .reset { color: #aeb4bb; }
+    .subtitle { margin: 3px 0 0; font-size: 12px; }
+    .synced { color: #7fe0bf; font-size: 13px; }
+    .quota { margin-top: 16px; padding: 14px; border-radius: 15px; background: #373a3e; }
+    .quota-label { color: #b6bbc1; font-size: 12px; }
+    .percent { margin-top: -2px; font-size: 42px; font-weight: 650; letter-spacing: -1.5px; }
+    .reset { align-self: flex-start; margin-top: 8px; font-size: 13px; }
+    .track { height: 7px; overflow: hidden; border-radius: 999px; background: #5d6268; }
+    .track span { display: block; width: 97%; height: 100%; border-radius: inherit; background: #72deb9; }
+    .secondary { margin-top: 9px; font-size: 12px; color: #b6bbc1; }
+    .metrics { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; margin: 15px 0; }
+    .metric { min-width: 0; padding: 0 11px; border-left: 1px solid #555a60; }
+    .metric:first-child { padding-left: 0; border: 0; }
+    .metric-value { font-size: 14px; font-weight: 650; }
+    .metric-label { margin-top: 3px; font-size: 10px; }
+    hr { height: 1px; margin: 0 -2px 14px; border: 0; background: #50545a; }
+    h2 { margin: 0 0 9px; font-size: 13px; }
+    .status { min-height: 25px; font-size: 12px; }
+    .dot { width: 14px; height: 14px; display: grid; place-items: center; flex: none; border-radius: 50%; background: #5dd4ad; color: #17362c; font-size: 10px; font-weight: 800; }
+    .pending { background: transparent; border: 1px dashed #7f858c; color: #9ea4aa; }
+    .status-value { margin-left: auto; max-width: 150px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .actions { margin-top: 15px; }
+    button { min-height: 36px; padding: 7px 12px; border: 1px solid #60666c; border-radius: 8px; background: #464a4f; color: #f6f8f9; font: inherit; font-size: 13px; }
+    button.primary { background: #2d6957; border-color: #3e8f77; }
+    .fine { margin: 12px 0 0; font-size: 10px; text-align: center; }
+    @media (max-width: 430px) { .stage { padding: 24px 12px; } }
+  </style>
+</head>
+<body>
+  <main class="stage">
+    <p class="caption">macOS 菜单栏弹窗 · 设计稿示例数据</p>
+    <section class="panel" aria-label="Band Desk Bridge 菜单栏窗口">
+      <header class="row between">
+        <div><h1>Band Desk Bridge</h1><p class="subtitle">Codex 卡片 · Mac 直连</p></div>
+        <span class="synced">已同步</span>
+      </header>
+      <section class="quota">
+        <div class="row between">
+          <div><div class="quota-label">本周剩余</div><div class="percent">97%</div></div>
+          <span class="reset">5 天 8 小时后重置</span>
+        </div>
+        <div class="track" role="progressbar" aria-label="本周剩余额度" aria-valuenow="97"><span></span></div>
+        <div class="row between secondary"><span>5 小时额度</span><strong>82%</strong></div>
+      </section>
+      <section class="metrics" aria-label="使用统计">
+        <div class="metric"><div class="metric-value">1.2M</div><div class="metric-label">累计 Token</div></div>
+        <div class="metric"><div class="metric-value">45.7K</div><div class="metric-label">峰值 / 日</div></div>
+        <div class="metric"><div class="metric-value">8 天</div><div class="metric-label">连续使用</div></div>
+      </section>
+      <hr>
+      <section aria-label="连接链路">
+        <h2>连接链路</h2>
+        <div class="row status"><span class="dot">✓</span><span>Codex App Server</span><span class="status-value">正常 · 刚刚</span></div>
+        <div class="row status"><span class="dot">✓</span><span>本机桥</span><span class="status-value">127.0.0.1:17373</span></div>
+        <div class="row status"><span class="dot">✓</span><span>AstroBox 插件</span><span class="status-value">已转发快照</span></div>
+        <div class="row status"><span class="dot pending">···</span><span>手环确认</span><span class="status-value">等待 ACK</span></div>
+      </section>
+      <footer>
+        <div class="row between actions"><button class="primary">↻&nbsp; 立即刷新</button><span><button>打开 AstroBox</button> <button>退出</button></span></div>
+        <p class="fine">仅监听本机 127.0.0.1，不保存 Codex 账号凭据</p>
+      </footer>
+    </section>
+  </main>
+</body>
+</html>
